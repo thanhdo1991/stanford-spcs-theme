@@ -1,0 +1,45 @@
+// TYPOGRAPHY
+// Define all typographic styles in this file.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: rem(36px);
+}
+
+h2 {
+  font-size: rem(30px);
+}
+
+h3 {
+  font-size: rem(24px);
+}
+
+h4 {
+  font-size: rem(14px);
+}
+
+h5 {
+  font-size: rem(16px);
+}
+
+h6 {
+  font-size: rem(12px);
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    color: $link-color-hover;
+  }
+}
