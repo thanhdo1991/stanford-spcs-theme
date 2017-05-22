@@ -1,0 +1,38 @@
+{
+  "hr2": {
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "//lorempixel.com/768/430/nature",
+            "alt": "FCL image",
+            "width": "1400",
+            "height": "835"
+          }
+        },
+        "only": true
+      }
+    },
+    "video": {
+      "include()": {
+        "pattern": "base-elements-video",
+        "with": {
+          "video": {
+            "src": "//dev-classical.pantheonsite.io/themes/custom/classical/video/ffw.mp4",
+            "width": "1400",
+            "height": "835",
+            "muted": "true",
+            "loop": "loop",
+            "autoplay": "true",
+            "preload": "auto",
+            "type": "video/mp4"
+          }
+        },
+        "only": true
+      }
+    },
+    "title": "Captivating Headline about Your Future Career.",
+    "position": "text--left"
+  }
+}
