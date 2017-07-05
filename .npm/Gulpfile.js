@@ -8,7 +8,7 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   scsslint = require('gulp-scss-lint'),
   jshint = require('gulp-jshint'),
-  run = require('gulp-run'),
+  shell = require('gulp-shell'),
   browserSync = require('browser-sync'),
   reload = browserSync.reload,
   src = {
@@ -22,9 +22,9 @@ var gulp = require('gulp'),
     cssFile: '../css/*.css',
   };
 
-gulp.task('pl-generate', function () {
-  run('php ../pattern-lab/core/console --generate').exec();
-});
+gulp.task('pl-generate', shell.task([
+ 'php ../pattern-lab/core/console --generate'
+]));
 
 // Task for local, static development.
 gulp.task('local-development', ['sass-dev', 'pl-generate'], function () {
@@ -73,6 +73,11 @@ gulp.task('scss-lint', function () {
       })
     );
 });
+
+// Build pattern-lab
+gulp.task('build-pattern-lab', shell.task([
+ 'cd ../pattern-lab/; M | composer install --no-dev; cd ../.npm/;'
+]));
 
 // Javascript Lint
 gulp.task('js-lint', function () {
