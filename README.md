@@ -16,27 +16,26 @@ So you got the prerequisites installed, and you're ready to get started? Great! 
 
 1. Download a copy of the framework.
 
-2. Open up the project folder in Terminal.
-
-3. Navigate to the `pattern-lab` folder then run below command to install all the required packeges of Pattern Lab.
+2. Open up the project folder in Terminal, navigate to the `.npm` folder.
 
     ```
-    composer install
+    cd .npm/
     ```
 
-4. Navigate to the `.npm` folder then run below command to install all the required packages with Node Package Manager.
+3. Run below command to install all the required packages with Node Package Manager.
 
     ```
     npm install
     ```
 
-5. Start up watches and local server, run below command in `.npm` folder.
+4. Start up watches and local server, run below command in `.npm` folder.
 
     ```
     gulp
     ```
 
-6. For just compile style, run below command in `.npm` folder.
+5. For just compile style, run below command in `.npm` folder.
 
     ```
     gulp sass-watch
+    ```
