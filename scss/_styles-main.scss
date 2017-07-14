@@ -8,18 +8,19 @@
 //Required imports
 @import '../vendor/susy/susy';
 
+//Base
+@import 'base/variables';
+@import 'base/colors';
 
 //Helpers
 @import 'helpers/extends';
 @import 'helpers/functions';
 @import 'helpers/mixins';
+@import 'helpers/helpers';
 
 // Reset
 @import 'base/reset';
 
-//Base
-@import 'base/variables';
-@import 'base/colors';
 @import 'base/fonts';
 @import 'base/grid';
 @import 'base/typography';
