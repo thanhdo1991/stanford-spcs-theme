@@ -47,3 +47,101 @@
     background-color: $teal;
   }
 }
+
+.link-light,
+%link-light {
+  a {
+    &,
+    &:visited {
+      @extend %text-light;
+
+      &:active,
+      &:hover {
+        @extend %text-light;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.link-dark,
+%link-dark {
+  a {
+    &,
+    &:visited {
+      @extend %text-dark;
+
+      &:active,
+      &:hover {
+        @extend %text-dark;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%link-primary {
+  a {
+    &,
+    &:visited {
+      @extend %text-primary;
+
+      &:active,
+      &:hover {
+        @extend %text-primary;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%link-secondary {
+  a {
+    &,
+    &:visited {
+      @extend %text-secondary;
+
+      &:active,
+      &:hover {
+        @extend %text-secondary;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.text-light,
+%text-light {
+  color: $white;
+}
+
+.link-dark,
+%link-dark {
+  a {
+    &,
+    &:visited {
+      @extend %text-dark;
+
+      &:active,
+      &:hover {
+        @extend %text-dark;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.text-dark,
+%text-dark {
+  color: $black;
+}
+
+.text-primary,
+%text-primary {
+  color: $primary-color;
+}
+
+.text-secondary,
+%text-secondary {
+  color: $secondary-color;
+}
