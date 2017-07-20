@@ -3,7 +3,6 @@
 
 var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
-  filter = require('gulp-filter'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
   scsslint = require('gulp-scss-lint'),
@@ -61,7 +60,6 @@ gulp.task('sass-dev', function () {
     .pipe(autoprefixer({browsers: ['safari >= 8', 'last 3 versions', '> 2%']}))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(src.css))
-    .pipe(filter("**/*.css"))
 });
 
 // SCSS Lint
