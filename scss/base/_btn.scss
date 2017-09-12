@@ -1,23 +1,30 @@
 // Button
 .btn {
-  background-color: transparent;// Custom default style of browser button tag
-  border-color: $primary-color;
+  @include SourceSansPro;
+  background-image: none;
+  border-radius: 0;
   border-style: solid;
   border-width: rem(1px);
-  color: $primary-color;
+  box-shadow: none;
   display: inline-block;
-  font-size: rem(20px);
-  font-weight: 400;
+  font-size: rem(18px);
+  font-weight: 600;
   line-height: 1;
-  min-width: rem(100px);
+  min-width: rem(114px);
   outline: none;
-  padding: rem(16px 25px 12px);
+  padding: rem(13.5px 15px);
   text-align: center;
-  text-transform: uppercase;
+  text-shadow: none;
+  transition: all .3s ease;
+  background-color: $branding-color-1;
+  border-color: $branding-color-1;
+  color: $white;
+  cursor: pointer;
 
   &:active,
   &:hover {
-    border-color: $silver;
-    color: $silver;
+    background-color: $branding-color-1-darker;
+    border-color: $branding-color-1-darker;
+    color: $white;
   }
 }

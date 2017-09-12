@@ -7,4 +7,22 @@
     tablet = "(min-width:48em)"; // 768px.
   // Add  functionality here.
 
+  // js-play-video
+  var $jsPlayVideo = $('.js-play-video'),
+      playVideo = function (e) {
+    var $iframeVimeo = $(this).find('.vimeo-embed'),
+        $iframeYoutube = $(this).find('.youtube-embed');
+    $(this).addClass("play-video");
+    if ($iframeVimeo.length) {
+      var player = Froogaloop($iframeVimeo[0]);
+      player.api('play');
+    }
+    if ($iframeYoutube.length) {
+      $iframeYoutube[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+    }
+  };
+  if ($jsPlayVideo.length) {
+    $jsPlayVideo.on('click', playVideo);
+  }
+
 }(this, this.document, this.jQuery));

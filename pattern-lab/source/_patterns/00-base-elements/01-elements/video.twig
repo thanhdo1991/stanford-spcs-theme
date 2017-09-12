@@ -1,3 +1,7 @@
-<video width="{{ video.width }}" height="{{ video.height }}" muted="{{ video.muted }}" loop="{{ video.loop }}" autoplay="{{ video.autoplay }}" preload="{{ video.preload }}">
-  <source src="{{ video.src }}" type="{{ video.type }}">
-</video>
+<div class="video-wrap js-play-video">
+  {{ video.videoItem }}
+  <div class="video-wrap__poster">
+    <span class="video-wrap__icon"><span class="btn btn--dark-blue btn--play"></span></span>
+    {{ video.image }}
+  </div>
+</div>

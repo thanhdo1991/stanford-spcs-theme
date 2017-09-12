@@ -1,12 +1,34 @@
 {
   "video": {
-    "src": "//dev-classical.pantheonsite.io/themes/custom/classical/video/ffw.mp4",
-    "width": "1400",
-    "height": "835",
-    "muted": "true",
-    "loop": "loop",
-    "autoplay": "true",
-    "preload": "auto",
-    "type": "video/mp4"
+    "videoItem": {
+      "include()": {
+        "pattern": "base-elements-youtube-embed",
+        "with": {
+          "youtubeEmbed": {
+            "id": "5gQDT24fuFU",
+            "width": "960",
+            "height": "540",
+            "allowfullscreen": "allowfullscreen",
+            "loop": "1",
+            "autoplay": "0",
+            "start": "0",
+            "rel": "0"
+          }
+        }
+      }
+    },
+    "image": {
+      "include()": {
+        "pattern": "base-elements-image",
+        "with": {
+          "image": {
+            "src": "//unsplash.it/960/540/",
+            "alt": "Delphix image",
+            "width": "960",
+            "height": "540"
+          }
+        }
+      }
+    }
   }
 }

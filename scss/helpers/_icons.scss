@@ -1,0 +1,29 @@
+@charset 'utf-8';
+// ICONS.
+
+%icons {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'spcs';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:before {
+    @extend %icons;
+  }
+}
+
+.icon-triangle-down:before {
+  content: '\e901';
+}
+
+.icon-check:before {
+  content: '\e900';
+}

@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$branding-color-1",
+              "id": "#8C1515"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$branding-color-2",
+              "id": "#00505C"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$branding-color-3",
+              "id": "#006CB8"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
