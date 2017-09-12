@@ -1,0 +1,20 @@
+name: Standford
+type: theme
+base theme: classy
+description: Custom Theme for Standford SPCS Website
+package: Standford
+core: 8.x
+
+libraries:
+  - spcs_theme/global-styling
+  - spcs_theme/global-js
+
+component-libraries:
+  components:
+    paths:
+      - pattern-lab/source/_patterns/01-components
+
+stylesheets-remove:
+  - '@classy/css/components/menu.css'
+  - '@classy/css/components/field.css'
+  - 'core/assets/vendor/normalize-css/normalize.css'
