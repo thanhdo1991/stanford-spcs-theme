@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$brand-primary",
+              "id": "#8c1515"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$brand-secondary",
+              "id": "#b1040e"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$sub-brand-primary",
+              "id": "#00505c"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$link-brand-primary",
+              "id": "#006cb8"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

@@ -34,39 +34,8 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-@mixin MarkWebPro {
-  font-family: "MarkWebPro", Helvetica, Arial, sans-serif;
-}
-
-
-@mixin MarkWebProBold {
-  font-family: "MarkWebProBold", Helvetica, Arial, sans-serif;
-}
-
-
-@mixin MarkWebProHeavy {
-  font-family: "MarkWebProHeavy", Helvetica, Arial, sans-serif;
-}
-
-
-@mixin MarkWebProItalic {
-  font-family: "MarkWebProItalic", Helvetica, Arial, sans-serif;
-}
-
-
-@mixin MarkWebProLight {
-  font-family: "MarkWebProLight", Helvetica, Arial, sans-serif;
-}
-
-
-@mixin MarkWebProMedium {
-  font-family: "MarkWebProMedium", Helvetica, Arial, sans-serif;
-}
-
-
-@mixin MarkWebProMediumItalic {
-  font-family: "MarkWebProMediumItalic", Helvetica, Arial, sans-serif;
+@mixin SourceSansPro {
+  font-family: "SourceSansPro", sans-serif;
 }
 
 //Single image background with retina support
@@ -110,20 +79,6 @@
   }
 }
 
-@mixin index-link {
-  position: fixed;
-  bottom: rem(20px);
-  left: rem(20px);
-  padding: rem(5px 10px);
-  border-radius: 20px;
-  display: block;
-  color: $black;
-  background-color: $pigeon-post-light;
-  z-index: 1000;
-  user-select: none;
-}
-
-
 // Clearfix as mixin.
 @mixin clearfix {
   &:before,
@@ -149,50 +104,5 @@
     top: 0;
     width: 100%;
     z-index: 1;
-  }
-}
-
-@mixin calcVideo($spacing: 2%) {
-  $w1: calc(200% / 3 - (2 * #{$spacing}) / 27);
-  $w2: calc(100% / 3 - (25 * #{$spacing}) / 27);
-
-  float: left;
-
-  &:nth-child(1) {
-    margin-right: $spacing;
-    width: $w1;
-  }
-
-  &:nth-child(2),
-  &:nth-child(3) {
-    margin-bottom: $spacing;
-    width: $w2;
-  }
-
-  &:nth-child(3) {
-    margin-bottom: 0;
-  }
-}
-
-@mixin gradient-overlay($gr-color, $gr-opacity) {
-  position: relative;
-
-  &:before {
-    background: rgba($gr-color, $gr-opacity);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
-@mixin list-fade-in-up($cols, $speed) {
-  @for $i from 1 through $cols {
-    &:nth-child(#{$cols}n + #{$i}) {
-      animation-duration: #{($i * $speed)}ms;
-    }
   }
 }

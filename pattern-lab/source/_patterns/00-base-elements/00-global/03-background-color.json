@@ -1,0 +1,72 @@
+{
+  "bgLists": [
+    {
+      "label": "Brand backgrounds",
+      "type": "normal",
+      "items": [
+        {
+          "label": "bg--brand-primary text--white",
+          "code": "#8c1515"
+        },
+        {
+          "label": "bg--brand-secondary text--white",
+          "code": "#b1040e"
+        },
+        {
+          "label": "bg--sub-brand-primary text--white",
+          "code": "#00505c"
+        },
+        {
+          "label": "bg--link-brand-primary text--white",
+          "code": "#006cb8"
+        }
+      ]
+    },
+    {
+      "label": "Light backgrounds",
+      "type": "normal",
+      "items": [
+        {
+          "label": "bg--white text--dark",
+          "code": "#ffffff"
+        },
+        {
+          "label": "bg--light-sandstone text--dark",
+          "code": "#f9f6ef"
+        },
+        {
+          "label": "bg--fog text--dark",
+          "code": "#f4f4f4"
+        }
+      ]
+    },
+    {
+      "label": "Dark backgrounds",
+      "type": "normal",
+      "items": [
+        {
+          "label": "bg--clay text--white",
+          "code": "#5f574f"
+        },
+        {
+          "label": "bg--brown text--white",
+          "code": "#2f2424"
+        }
+      ]
+    },
+    {
+      "label": "Overlay Backgrounds",
+      "type": "overlay",
+      "items": [
+        {
+          "label": "bg--hero-dark-overlay text--white",
+          "code": "#2B2B2B @85%"
+        },
+        {
+          "label": "bg--image-dark-overlay text--white",
+          "code": "#414141 @65%"
+        }
+      ]
+    }
+  ]
+}

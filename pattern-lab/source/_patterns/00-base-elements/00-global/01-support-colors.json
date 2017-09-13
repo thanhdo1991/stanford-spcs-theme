@@ -1,0 +1,78 @@
+{
+  "brand": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$black",
+              "id": "#2e2d29"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$light-sandstone",
+              "id": "#f9f6ef"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$fog",
+              "id": "#f4f4f4"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$clay",
+              "id": "#5f574f"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$brown",
+              "id": "#2f2424"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$sun",
+              "id": "#ffe16b"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

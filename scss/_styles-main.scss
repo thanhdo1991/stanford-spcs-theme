@@ -16,27 +16,25 @@
 @import 'helpers/extends';
 @import 'helpers/functions';
 @import 'helpers/mixins';
-@import 'helpers/helpers';
 
 // Reset
 @import 'base/reset';
 
 @import 'base/fonts';
 @import 'base/grid';
+@import 'helpers/icons';
 @import 'base/typography';
 @import 'base/btn';
 @import 'base/form';
+@import 'base/table';
+@import 'helpers/helpers';
 
 // Vendors
 //@import 'vendors/chosen';
-
-// Blocks
-@import 'blocks/block-example';
-@import 'blocks/index-links';
 
 // Layouts
 @import 'layouts/layout';
 @import 'layouts/navigation';
 
 // Pages
-@import 'pages/index';
+// @import 'pages/index';

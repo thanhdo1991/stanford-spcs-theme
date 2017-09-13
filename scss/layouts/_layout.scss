@@ -15,7 +15,6 @@
 
 //Enable font-smoothing
 html {
-  @include helvetica;
   font-size: $base-font-size; // Don't modify static unit.
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -26,9 +25,12 @@ html {
 body {
   // Disable in production mode;
   // @include show-breakpoints;
+  @include SourceSansPro;
   -webkit-tap-highlight-color: transparent;
   color: $text-color;
-  font-size: rem(16px);
+  font-size: rem(18px);
+  font-weight: 400;
   text-size-adjust: none;
+  line-height: rem(26px);
   word-wrap: break-word;
 }

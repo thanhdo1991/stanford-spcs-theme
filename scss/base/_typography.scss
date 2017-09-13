@@ -7,39 +7,106 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-weight: 700;
+  margin: rem(0 0 15px);
+  line-height: rem(24px);
 }
 
 h1 {
-  font-size: rem(36px);
+  font-size: rem(31px);
+  line-height: rem(39px);
+
+  @include susy-media(tablet) {
+    font-size: rem(55px);
+    line-height: rem(69px);
+  }
 }
 
 h2 {
-  font-size: rem(30px);
+  font-size: rem(28px);
+  line-height: rem(36px);
+
+  @include susy-media(tablet) {
+    font-size: rem(35px);
+    line-height: rem(44px);
+  }
 }
 
 h3 {
-  font-size: rem(24px);
+  font-size: rem(25px);
+  line-height: rem(31px);
+
+  @include susy-media(tablet) {
+    font-size: rem(28px);
+    line-height: rem(36px);
+  }
 }
 
 h4 {
-  font-size: rem(14px);
+  font-size: rem(23px);
+  line-height: rem(29px);
 }
 
 h5 {
-  font-size: rem(16px);
+  font-size: rem(18px);
 }
 
 h6 {
-  font-size: rem(12px);
+  font-size: rem(16px);
 }
 
-a {
-  color: $link-color;
+p {
+  margin: rem(0 0 15px);
+}
+
+%link,
+.link {
+  color: $link-brand-primary;
   text-decoration: none;
 
   &:active,
   &:hover {
-    color: $link-color-hover;
+    color: $link-brand-primary-darker;
   }
+
+  &--semibold {
+    font-weight: 600;
+  }
+}
+
+a {
+  @extend %link;
+}
+
+em {
+  font-size: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+}
+
+small {
+  font-size: smaller;
+}
+
+abbr {
+  border-bottom: 1px dotted #808080;
+  cursor: help;
+}
+
+tt,
+code,
+kbd,
+samp {
+  font-family: monospace;
 }

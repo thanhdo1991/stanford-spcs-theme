@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/styles.css: {}
+
+global-js:
+  js:
+    js/lib/chosen.jquery.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/modernizr
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/drupal.active-link

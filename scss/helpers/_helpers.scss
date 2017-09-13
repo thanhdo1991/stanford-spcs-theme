@@ -1,147 +1,147 @@
 // Helper classes
-
-.font {
-  &--small {
-    font-size: rem(14px);
+// Text
+.text {
+  &--left {
+    text-align: left;
   }
 
-  &--tiny {
-    font-size: rem(13px);
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  // Text white
+  &--white {
+    color: $white;
+  }
+
+  // Text dark
+  &--dark {
+    color: $text-color;
   }
 }
 
-.granite-green {
-  color: $gray-89;
-}
-
-.mist-gray {
-  color: $silver;
-}
-
-.blue {
-  color: $blue;
-}
-
-.white {
-  color: $white;
-}
-
+// Backgrounds
 .bg {
+  // Brand backgrounds
+  &--brand-primary {
+    background-color: $brand-primary;
+  }
+
+  &--brand-secondary {
+    background-color: $brand-secondary;
+  }
+
+  &--sub-brand-primary {
+    background-color: $sub-brand-primary;
+  }
+
+  &--link-brand-primary {
+    background-color: $link-brand-primary;
+  }
+
+  // Light backgrounds
   &--white {
     background-color: $white;
   }
 
-  &--light-tan {
-    background-color: $gray-f4;
+  &--light-sandstone {
+    background-color: $light-sandstone;
   }
 
-  &--light-grey {
-    background-color: $teal-f3;
+  &--fog {
+    background-color: $fog;
   }
 
-  &--slate-grey {
-    background-color: $teal-dc;
+  // Dark backgrounds
+  &--clay {
+    background-color: $clay;
   }
 
-  &--teal {
-    background-color: $teal;
+  &--brown {
+    background-color: $brown;
+  }
+
+  // Overlay backgrounds
+  &--hero-dark-overlay {
+    @include gradient-overlay($hero-dark-overlay, .85);
+  }
+
+  &--image-dark-overlay {
+    @include gradient-overlay($image-dark-overlay, .65);
   }
 }
 
-.link-light,
-%link-light {
-  a {
-    &,
-    &:visited {
-      @extend %text-light;
+.element-invisible {
+  @extend %invisible;
+}
 
-      &:active,
-      &:hover {
-        @extend %text-light;
-        opacity: .8;
-      }
+.video-wrap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: rem(20px);
+
+  video,
+  iframe {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__poster {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(0);
+    transition: transform .8s ease;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      z-index: 2;
+    }
+
+    img {
+      height: 100%;
+      left: 0;
+      max-width: inherit;
+      position: absolute;
+      width: auto;
+      z-index: 1;
     }
   }
-}
 
-.link-dark,
-%link-dark {
-  a {
-    &,
-    &:visited {
-      @extend %text-dark;
+  &__icon {
+    left: 50%;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
 
-      &:active,
-      &:hover {
-        @extend %text-dark;
-        opacity: .7;
-      }
+  &.play-video {
+    .video-wrap__poster {
+      transform: translateY(-100%);
+    }
+
+    video,
+    iframe {
+      opacity: 1;
     }
   }
-}
-
-%link-primary {
-  a {
-    &,
-    &:visited {
-      @extend %text-primary;
-
-      &:active,
-      &:hover {
-        @extend %text-primary;
-        opacity: .7;
-      }
-    }
-  }
-}
-
-%link-secondary {
-  a {
-    &,
-    &:visited {
-      @extend %text-secondary;
-
-      &:active,
-      &:hover {
-        @extend %text-secondary;
-        opacity: .7;
-      }
-    }
-  }
-}
-
-.text-light,
-%text-light {
-  color: $white;
-}
-
-.link-dark,
-%link-dark {
-  a {
-    &,
-    &:visited {
-      @extend %text-dark;
-
-      &:active,
-      &:hover {
-        @extend %text-dark;
-        opacity: .7;
-      }
-    }
-  }
-}
-
-.text-dark,
-%text-dark {
-  color: $black;
-}
-
-.text-primary,
-%text-primary {
-  color: $primary-color;
-}
-
-.text-secondary,
-%text-secondary {
-  color: $secondary-color;
 }
