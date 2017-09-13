@@ -1,4 +1,6 @@
 #!/bin/bash
+git config --global user.email "$HEROKU_EMAIL"
+git config --global user.name "Circle CI"
 
 echo "machine api.heroku.com
           login $HEROKU_EMAIL
