@@ -9,7 +9,7 @@ input[type="tel"] {
   @include SourceSansPro;
   appearance: none;
   background-color: $white;
-  border: rem(1px) solid $gray-dd;
+  border: rem(1px) solid $text-color;
   box-shadow: inherit;
   box-sizing: border-box;
   color: $text-color;
@@ -25,39 +25,54 @@ input[type="tel"] {
   }
 
   &::-webkit-input-placeholder {
-    color: $gray-dd;
+    color: $cadet-blue;
     opacity: 1;
   }
 
   &::-moz-placeholder {
-    color: $gray-dd;
+    color: $cadet-blue;
     opacity: 1;
   }
 
   &:-ms-input-placeholder {
-    color: $gray-dd;
+    color: $cadet-blue;
     opacity: 1;
   }
 
   &:-moz-placeholder {
-    color: $gray-dd;
+    color: $cadet-blue;
     opacity: 1;
   }
 
   &.focused,
   &:focus {
     border-color: $text-color;
-    background-color: $white;
     color: $text-color;
   }
 
   &.error {
-    border-color: $red;
-    padding-right: rem(40px);
+    border-color: $error-color;
+    color: $error-color;
+
+    &::-webkit-input-placeholder {
+      color: $error-color;;
+    }
+
+    &::-moz-placeholder {
+      color: $error-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $error-color;
+    }
+
+    &:-moz-placeholder {
+      color: $error-color;
+    }
   }
 
   &.success {
-    border-color: $green;
+    border-color: $positive-color;
   }
 
   &[disabled] {
@@ -126,7 +141,7 @@ input[type="radio"] {
       top: rem(3px);
       width: rem(22px);
       height: rem(22px);
-      border: rem(1px) solid $gray-dd;
+      border: rem(1px) solid $black;
 
       @include susy-media(tablet) {
         width: rem(16px);
@@ -161,7 +176,7 @@ input[type="radio"] {
   &:checked {
     & + label {
       &:before {
-        border-color: $branding-color-1;
+        border-color: $brand-primary;
       }
     }
   }
@@ -191,7 +206,7 @@ input[type="radio"] {
         width: rem(16px);
         height: rem(16px);
         opacity: 1;
-        background: $branding-color-1;
+        background: $brand-primary;
         border-radius: 100%;
 
         @include susy-media(tablet) {
@@ -228,8 +243,8 @@ input[type="checkbox"] {
         border-width: rem(2px);
         height: rem(22px);
         width: rem(22px);
-        background-color: $branding-color-1;
-        border-color: $branding-color-1;
+        background-color: $brand-primary;
+        border-color: $brand-primary;
 
         @include susy-media(tablet) {
           height: rem(16px);
@@ -288,14 +303,14 @@ input[type="checkbox"] {
     @include SourceSansPro;
     appearance: none;
     font-size: rem(18px);
-    border: rem(1px) solid $gray-dd;
+    border: rem(1px) solid $black;
     background: $white;
     height: rem(44px);
     padding: rem(6px 40px 6px 15px);
     width: 100%;
     box-sizing: border-box;
     border-radius: 0;
-    color: $gray-dd;
+    color: $black;
 
     &.focused,
     &:active,

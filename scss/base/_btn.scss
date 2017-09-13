@@ -10,21 +10,34 @@
   font-size: rem(18px);
   font-weight: 600;
   line-height: 1;
-  min-width: rem(114px);
+  min-width: rem(200px);
   outline: none;
   padding: rem(13.5px 15px);
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background-color: $branding-color-1;
-  border-color: $branding-color-1;
+  background-color: $brand-secondary;
+  border-color: $brand-secondary;
   color: $white;
   cursor: pointer;
 
   &:active,
   &:hover {
-    background-color: $branding-color-1-darker;
-    border-color: $branding-color-1-darker;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
     color: $white;
+  }
+
+  &--solid-black {
+    background-color: $white;
+    border-color: $clay;
+    color: $clay;
+
+    &:active,
+    &:hover {
+      background-color: $white;
+      border-color: $brand-secondary;
+      color: $brand-secondary;
+    }
   }
 }

@@ -2,30 +2,34 @@
 // Define all color variables in this document
 // Use http://chir.ag/projects/name-that-color/ for naming a color.
 
-$black: #000000;
 $white: #fff;
 
 $gray: #333333;
-$gray-f4: #f4f4f4;
-$gray-f9: #f9f6ef;
-$gray-dd: #ddd;
 
 $silver: #ccc;
 
-$red: #8c1515;
+// BRAND COLORS
+$brand-primary: #8c1515;
+$brand-secondary: #b1040e;
+$sub-brand-primary: #00505c;
+$link-brand-primary: #006cb8;
+$link-brand-primary-darker: darken($link-brand-primary, 10%);
 
-$green: #00505c;
-
-$blue: #006cb8;
-
+// SUPPORT COLORS
+$black: #2e2d29;
+$light-sandstone: #f9f6ef;
+$fog: #f4f4f4;
+$clay: #5f574f;
 $brown: #2f2424;
-$brown-5f: #5f574f;
+$sun: #ffe16b;
+$cadet-blue: #b2bac4;
 
-$branding-color-1: $red;
-$branding-color-1-darker: darken($branding-color-1, 10%);
-$branding-color-2: $green;
-$branding-color-2-darker: darken($branding-color-2, 10%);
-$branding-color-3: $blue;
-$branding-color-3-darker: darken($branding-color-3, 10%);
+// OVERLAY COLORS
+$hero-dark-overlay: #2b2b2b;
+$image-dark-overlay: #414141;
 
-$text-color: $gray;
+// UTILITY COLORS
+$error-color: #e20d0d;
+$positive-color: #2dcc70;
+
+$text-color: $black;

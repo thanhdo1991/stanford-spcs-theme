@@ -13,8 +13,12 @@
     text-align: center;
   }
 
-  // Text light
-  &--light {
+  &--semibold {
+    font-weight: 600;
+  }
+
+  // Text white
+  &--white {
     color: $white;
   }
 
@@ -26,38 +30,52 @@
 
 // Backgrounds
 .bg {
-  // Background light
+  // Brand backgrounds
+  &--brand-primary {
+    background-color: $brand-primary;
+  }
+
+  &--brand-secondary {
+    background-color: $brand-secondary;
+  }
+
+  &--sub-brand-primary {
+    background-color: $sub-brand-primary;
+  }
+
+  &--link-brand-primary {
+    background-color: $link-brand-primary;
+  }
+
+  // Light backgrounds
   &--white {
     background-color: $white;
   }
 
-  &--gray-f4 {
-    background-color: $gray-f4;
+  &--light-sandstone {
+    background-color: $light-sandstone;
   }
 
-  &--gray-f9 {
-    background-color: $gray-f9;
+  &--fog {
+    background-color: $fog;
   }
 
-  // Background dark
-  &--branding-color-1 {
-    background-color: $branding-color-1;
-  }
-
-  &--branding-color-2 {
-    background-color: $branding-color-2;
-  }
-
-  &--branding-color-3 {
-    background-color: $branding-color-3;
+  // Dark backgrounds
+  &--clay {
+    background-color: $clay;
   }
 
   &--brown {
     background-color: $brown;
   }
 
-  &--brown-5f {
-    background-color: $brown-5f;
+  // Overlay backgrounds
+  &--hero-dark-overlay {
+    @include gradient-overlay($hero-dark-overlay, .85);
+  }
+
+  &--image-dark-overlay {
+    @include gradient-overlay($image-dark-overlay, .65);
   }
 }
 

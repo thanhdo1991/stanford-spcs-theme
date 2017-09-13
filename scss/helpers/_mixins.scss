@@ -34,12 +34,9 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
 @mixin SourceSansPro {
-  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-family: "SourceSansPro", sans-serif;
 }
-
-
 
 //Single image background with retina support
 //USAGE:  @include background-image-retina('preloader', 'GIF', rem(20px), rem(20px));

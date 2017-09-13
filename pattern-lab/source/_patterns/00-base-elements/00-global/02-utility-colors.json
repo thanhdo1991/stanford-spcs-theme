@@ -1,0 +1,30 @@
+{
+  "brand": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$error-color",
+              "id": "#e20d0d"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$positive-color",
+              "id": "#2dcc70"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

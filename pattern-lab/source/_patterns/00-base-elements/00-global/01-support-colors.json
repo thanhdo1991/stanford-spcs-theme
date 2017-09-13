@@ -6,8 +6,8 @@
           "pattern": "base-elements-colors-item",
           "with": {
             "item": {
-              "name": "$brand-primary",
-              "id": "#8c1515"
+              "name": "$black",
+              "id": "#2e2d29"
             }
           },
           "only": true
@@ -18,8 +18,8 @@
           "pattern": "base-elements-colors-item",
           "with": {
             "item": {
-              "name": "$brand-secondary",
-              "id": "#b1040e"
+              "name": "$light-sandstone",
+              "id": "#f9f6ef"
             }
           },
           "only": true
@@ -30,8 +30,8 @@
           "pattern": "base-elements-colors-item",
           "with": {
             "item": {
-              "name": "$sub-brand-primary",
-              "id": "#00505c"
+              "name": "$fog",
+              "id": "#f4f4f4"
             }
           },
           "only": true
@@ -42,8 +42,32 @@
           "pattern": "base-elements-colors-item",
           "with": {
             "item": {
-              "name": "$link-brand-primary",
-              "id": "#006cb8"
+              "name": "$clay",
+              "id": "#5f574f"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$brown",
+              "id": "#2f2424"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-colors-item",
+          "with": {
+            "item": {
+              "name": "$sun",
+              "id": "#ffe16b"
             }
           },
           "only": true
