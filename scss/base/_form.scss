@@ -4,8 +4,7 @@ input[type='submit'] {
 }
 
 %form-text,
-.form-text,
-input[type="tel"] {
+.form-text {
   @include SourceSansPro;
   appearance: none;
   background-color: $white;
@@ -13,11 +12,11 @@ input[type="tel"] {
   box-shadow: inherit;
   box-sizing: border-box;
   color: $text-color;
-  font-size: rem(18px);
-  height: rem(44px);
+  font-size: rem(16px);
+  height: rem(55px);
   outline: 0;
   border-radius: 0;
-  padding: rem(5px 15px);
+  padding: rem(10px 25px);
   width: 100%;
 
   &::-ms-clear {
@@ -55,7 +54,7 @@ input[type="tel"] {
     color: $error-color;
 
     &::-webkit-input-placeholder {
-      color: $error-color;;
+      color: $error-color;
     }
 
     &::-moz-placeholder {
@@ -77,25 +76,12 @@ input[type="tel"] {
 
   &[disabled] {
     cursor: not-allowed;
-
-    &::-webkit-input-placeholder {
-      opacity: 0.5;
-    }
-
-    &::-moz-placeholder {
-      opacity: 0.5;
-    }
-
-    &:-ms-input-placeholder {
-      opacity: 0.5;
-    }
-
-    &:-moz-placeholder {
-      opacity: 0.5;
-    }
+    border-color: $cadet-blue;
+    color: $cadet-blue;
   }
 }
 
+input[type='tel'],
 .form-url,
 .form-email {
   @extend %form-text;
@@ -106,7 +92,7 @@ input[type="tel"] {
   font-size: rem(18px);
   height: auto;
   min-height: rem(200px);
-  padding: rem(10px 15px);
+  padding: rem(15px 25px);
 }
 
 .form-item,
@@ -119,48 +105,38 @@ input[type="tel"] {
   }
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+label {
+  font-weight: 600;
+  margin-bottom: rem(3px);
+  display: block;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
   @extend %invisible;
 
-  + label{
+  + label {
     cursor: pointer;
     display: block;
     position: relative;
     overflow: hidden;
-    padding: rem(0 0 2px 35px);
+    padding: rem(0 0 0 30px);
+    font-weight: 400;
 
-    @include susy-media(tablet) {
-      padding: rem(0 0 2px 30px);
-    }
-
-    &:before{
-      content: "";
+    &:before {
+      content: '';
       position: absolute;
       left: 0;
       top: rem(3px);
-      width: rem(22px);
-      height: rem(22px);
-      border: rem(1px) solid $black;
-
-      @include susy-media(tablet) {
-        width: rem(16px);
-        height: rem(16px);
-        top: rem(4px);
-      }
+      width: rem(16px);
+      height: rem(16px);
+      border: rem(2px) solid $link-brand-primary;
     }
 
     &:after {
-      content: "";
-      left: rem(4px);
       opacity: 0;
       position: absolute;
-      top: rem(7px);
       transition: opacity .3s ease;
-
-      @include susy-media(tablet) {
-        top: rem(8px);
-      }
     }
   }
 
@@ -176,149 +152,118 @@ input[type="radio"] {
   &:checked {
     & + label {
       &:before {
-        border-color: $brand-primary;
-      }
-    }
-  }
-}
-
-input[type="radio"] {
-  + label {
-    &:before {
-      border-radius: 50%;
-    }
-  }
-
-  &:checked {
-    & + label {
-      &:before {
-        border-width: rem(2px);
-        height: rem(20px);
-        width: rem(20px);
-
-        @include susy-media(tablet) {
-          height: rem(14px);
-          width: rem(14px);
-        }
+        border-color: $link-brand-primary;
       }
 
       &:after {
-        width: rem(16px);
-        height: rem(16px);
         opacity: 1;
-        background: $brand-primary;
-        border-radius: 100%;
-
-        @include susy-media(tablet) {
-          width: rem(10px);
-          height: rem(10px);
-        }
       }
     }
   }
 }
 
-input[type="checkbox"] {
+input[type='radio'] {
   + label {
-    padding: rem(0 0 2px 40px);
-
-    @include susy-media(tablet) {
-      padding: rem(0 0 2px 35px);
-    }
-
     &:before {
-      width: rem(24px);
-      height: rem(24px);
-
-      @include susy-media(tablet) {
-        width: rem(18px);
-        height: rem(18px);
-      }
+      border-radius: 100%;
     }
-  }
 
-  &:checked {
-    & + label {
-      &:before {
-        border-width: rem(2px);
-        height: rem(22px);
-        width: rem(22px);
-        background-color: $brand-primary;
-        border-color: $brand-primary;
-
-        @include susy-media(tablet) {
-          height: rem(16px);
-          width: rem(16px);
-        }
-      }
-
-      &:after {
-        @extend %icons;
-        @extend .icon-check:before;
-        color: $white;
-        font-size: rem(15px);
-        left: rem(6px);
-        opacity: 1;
-
-        @include susy-media(tablet) {
-          left: rem(5px);
-          font-size: rem(11px);
-        }
-      }
+    &:after {
+      content: '';
+      background: $link-brand-primary;
+      border-radius: 100%;
+      height: rem(12px);
+      left: rem(4px);
+      top: rem(7px);
+      width: rem(12px);
     }
   }
 }
 
-.form-type-select {
-  position: relative;
-
-  .select-arrow-icon {
-    color: $text-color;
-    height: rem(15px);
-    line-height: rem(15px);
-    margin-top: rem(15px);
-    position: absolute;
-    right: rem(15px);
-    text-align: left;
-    text-indent: -999em;
-    width: rem(15px);
-    z-index: 3;
-    display: block;
-
+input[type='checkbox'] {
+  + label {
     &:before {
+      border-radius: rem(2px);
+    }
+
+    &:after {
       @extend %icons;
-      @extend .icon-triangle-down:before;
-      display: block;
-      float: left;
-      font-size: rem(14px);
-      height: 100%;
+      @extend .icon-check:before;
+      color: $white;
+      font-size: rem(11px);
+      left: 0;
+      top: rem(3px);
       text-align: center;
-      text-indent: 0;
-      transform: rotate(0);
-      width: 100%;
+      width: rem(20px);
+      height: rem(20px);
+      line-height: rem(20px);
+      background-color: $link-brand-primary;
     }
   }
+}
 
-  select {
-    @include SourceSansPro;
-    appearance: none;
-    font-size: rem(18px);
-    border: rem(1px) solid $black;
-    background: $white;
-    height: rem(44px);
-    padding: rem(6px 40px 6px 15px);
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 0;
-    color: $black;
+.select-arrow-icon {
+  display: none;
+}
 
-    &.focused,
-    &:active,
-    &:focus {
-      border-color: $text-color;
-      color: $text-color;
-      background-color: $white;
-      outline: none;
+.touchevents {
+  .form-type-select {
+    .select-arrow-icon {
+      color: $link-brand-primary;
+      margin-top: rem(18px);
+      position: absolute;
+      right: rem(20px);
+      text-align: left;
+      text-indent: -999em;
+      width: 0;
+      height: 0;
+      z-index: 3;
+
+      &:before {
+        @extend %icons;
+        @extend .icon-triangle-down:before;
+        display: block;
+        float: left;
+        font-size: rem(22px);
+        text-align: center;
+        text-indent: 0;
+        height: rem(22px);
+        line-height: rem(22px);
+        width: rem(22px);
+        pointer-events: none;
+        margin-left: rem(-22px);
+      }
+    }
+
+    @include susy-media(mobileOnly) {
+      position: relative;
+
+      .select-arrow-icon {
+        display: block;
+      }
+
+      select {
+        @include SourceSansPro;
+        appearance: none;
+        font-size: rem(16px);
+        border: rem(1px) solid $text-color;
+        background: $white;
+        height: rem(55px);
+        padding: rem(15px 40px 15px 25px);
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+        color: $cadet-blue;
+
+        &.focused,
+        &:active,
+        &:focus {
+          border-color: $text-color;
+          color: $text-color;
+          background-color: $white;
+          outline: none;
+        }
+      }
     }
   }
 }
