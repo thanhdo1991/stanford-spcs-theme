@@ -5,15 +5,19 @@
 $white: #fff;
 
 $gray: #333333;
-
+$gray-17: #171717;
+$gray-99: #999999;
+$gray-55: #555555;
+$gray-11: #112146;
+$gray-ee: #eee;
 $silver: #ccc;
 
-// BRAND COLORS
-$brand-primary: #8c1515;
-$brand-secondary: #b1040e;
-$sub-brand-primary: #00505c;
-$link-brand-primary: #006cb8;
-$link-brand-primary-darker: darken($link-brand-primary, 10%);
+$red-9c: #9c0033;
+$red: #8c1515;
+$red-light: #b1040e;
+$green: #00aa00;
+$blue: #006cb8;
+$blue-darker: #00505c;
 
 // SUPPORT COLORS
 $black: #2e2d29;
@@ -33,3 +37,10 @@ $error-color: #e20d0d;
 $positive-color: #2dcc70;
 
 $text-color: $black;
+
+// BRAND COLORS
+$primary-color: var(--primary-color, $red);
+$secondary-color: var(--secondary-color, $red-light);
+$sub-color: var(--sub-color, $blue-darker);
+$link-color: var(--link-color, $blue);
+$link-color-darker: darken($blue, 10%);

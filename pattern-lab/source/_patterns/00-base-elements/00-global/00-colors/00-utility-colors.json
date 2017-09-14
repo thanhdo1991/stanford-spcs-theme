@@ -1,0 +1,23 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$error-color",
+                "code": "#e20d0d"
+              },
+              {
+                "variable": "$positive-color",
+                "code": "#2dcc70"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

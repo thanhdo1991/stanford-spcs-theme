@@ -13,7 +13,7 @@
 
       &.highlighted {
         background-color: $white;
-        color: $link-brand-primary;
+        color: $link-color;
       }
     }
   }
@@ -35,7 +35,7 @@
     @extend %icons;
     @extend .icon-triangle-down:before;
     bottom: rem(16px);
-    color: $link-brand-primary;
+    color: $link-color;
     font-size: rem(14px);
     position: absolute;
     right: rem(20px);
@@ -99,7 +99,7 @@
   }
 
   .result-selected {
-    color: $link-brand-primary;
+    color: $link-color;
   }
 }
 

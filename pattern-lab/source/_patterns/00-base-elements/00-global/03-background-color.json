@@ -5,19 +5,19 @@
       "type": "normal",
       "items": [
         {
-          "label": "bg--brand-primary text--white",
+          "label": "bg--primary-color text--white",
           "code": "#8c1515"
         },
         {
-          "label": "bg--brand-secondary text--white",
+          "label": "bg--secondary-color text--white",
           "code": "#b1040e"
         },
         {
-          "label": "bg--sub-brand-primary text--white",
+          "label": "bg--sub-color text--white",
           "code": "#00505c"
         },
         {
-          "label": "bg--link-brand-primary text--white",
+          "label": "bg--link-color text--white",
           "code": "#006cb8"
         }
       ]

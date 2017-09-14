@@ -61,12 +61,12 @@ p {
 
 %link,
 .link {
-  color: $link-brand-primary;
+  color: $link-color;
   text-decoration: none;
 
   &:active,
   &:hover {
-    color: $link-brand-primary-darker;
+    color: $link-color-darker;
   }
 
   &--dark {
@@ -74,7 +74,7 @@ p {
 
     &:active,
     &:hover {
-      color: $link-brand-primary-darker;
+      color: $link-color-darker;
     }
   }
 
