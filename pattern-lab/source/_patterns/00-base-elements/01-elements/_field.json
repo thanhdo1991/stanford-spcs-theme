@@ -1,0 +1,31 @@
+{
+  "field": {
+    "label": "",
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "Link 1"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "href": "#",
+              "text": "Link 2"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
