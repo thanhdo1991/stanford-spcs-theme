@@ -20,13 +20,13 @@
     <script src="../../js/drupal/drupal.js?{{ cacheBuster }}"></script>
     <script src="../../js/drupal/picturefill.min.js?{{ cacheBuster }}"></script>
     <script src="../../js/drupal/modernizr.min.js?{{ cacheBuster }}"></script>
-    <script src="../../../../js/lib/js.cookie.js?{{ cacheBuster }}"></script>
-    <script src="../../../../js/panel-switch.js?{{ cacheBuster }}"></script>
+    <script src="../../js/libs/js.cookie.js?{{ cacheBuster }}"></script>
+    <script src="../../js/panel-switch.js?{{ cacheBuster }}"></script>
     <!-- Base js drupal 8 -->
   </head>
   <body class="{{ bodyClass }}">
   <div class="panel-switch">
-    <div class="panel-switch__icon js-show-hide"><i class="icon-cogs"></i></div>
+    <div class="panel-switch__icon js-show-hide"><i class="ico-cogs"></i></div>
     <div class="panel-switch__content">
       <h2 class="panel-switch__title">Color Option</h2>
       <div class="panel-switch__color">
@@ -63,7 +63,7 @@
         <div class="panel-switch__item">
           <h4>Sub Color</h4>
           <div class="panel-switch__item__inner">
-            <input value="#00505c" name="textColor" class="js-color-input form-control sub-color" type="text">
+            <input value="#00505c" name="subColor" class="js-color-input form-control sub-color" type="text">
             <span class="panel-switch__item__color">
               <input class="js-color-picker sub-color" name="subColor" type="color" value="#00505c">
             </span>
@@ -72,7 +72,7 @@
         <div class="panel-switch__item">
           <h4>Link Color</h4>
           <div class="panel-switch__item__inner">
-            <input value="#006cb8" name="textColor" class="js-color-input form-control link-color" type="text">
+            <input value="#006cb8" name="linkColor" class="js-color-input form-control link-color" type="text">
             <span class="panel-switch__item__color">
               <input class="js-color-picker link-color" name="linkColor" type="color" value="#006cb8">
             </span>
@@ -82,13 +82,13 @@
       <div class="panel-switch__action">
         <a href="#" class="js-save btn-save">
           <span class="btn-text save">Save</span>
-          <span class="btn-icon"><i class="icon-check2"></i></span>
+          <span class="btn-icon"><i class="ico-check2"></i></span>
         </a>
         <a href="#" class="js-cancel btn-cancel">
           <span class="btn-text cancel">cancel</span>
           <span class="btn-icon">
-            <span class="approve js-confirm" href="#"><i class="icon-check2"></i></span>
-            <span class="not-approve js-confirm" href="#"><i class="icon-close"></i></span>
+            <span class="approve js-confirm" href="#"><i class="ico-check2"></i></span>
+            <span class="not-approve js-confirm" href="#"><i class="ico-close"></i></span>
           </span>
         </a>
       </div>

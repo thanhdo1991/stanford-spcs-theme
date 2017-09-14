@@ -1,4 +1,4 @@
-%icons {
+%ico{
   font-family: 'fcl';
   speak: none;
   font-style: normal;
@@ -10,29 +10,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^='ico-'],
+[class*=' ico-'] {
   &:before {
-    @extend %icons;
+    @extend %ico;
   }
 }
 
-.icon-check2:before {
+.ico-check2:before {
   content: "\e905";
 }
 
-.icon-close:before {
+.ico-close:before {
   content: "\e903";
 }
 
-.icon-icon-right:before {
+.ico-icon-right:before {
   content: "\e901";
 }
 
-.icon-icon-left:before {
+.ico-icon-left:before {
   content: "\e902";
 }
 
-.icon-cogs:before {
+.ico-cogs:before {
   content: "\e900";
 }

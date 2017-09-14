@@ -89,9 +89,14 @@ html {
       border: none;
     }
 
+    .chosen-container {
+      display: none !important;
+    }
+
     select {
       width: 100%;
       border: 0;
+      display: block !important;
       height: rem(25px);
       padding: rem(0 5px);
       -moz-appearance: none;

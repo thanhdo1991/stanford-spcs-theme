@@ -1,25 +1,30 @@
 // Button
 .btn {
   @include SourceSansPro;
+  background-color: $secondary-color;
   background-image: none;
+  border-color: $secondary-color;
   border-radius: 0;
   border-style: solid;
   border-width: rem(1px);
   box-shadow: none;
+  color: $white;
+  cursor: pointer;
   display: inline-block;
   font-size: rem(18px);
   font-weight: 600;
   line-height: 1;
-  min-width: rem(200px);
   outline: none;
   padding: rem(13.5px 15px);
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background-color: $secondary-color;
-  border-color: $secondary-color;
-  color: $white;
-  cursor: pointer;
+  width: 100%;
+
+  @include susy-media(mobileLandscape) {
+    min-width: rem(236px);
+    width: auto;
+  }
 
   &:active,
   &:hover {

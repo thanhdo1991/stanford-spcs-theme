@@ -1,0 +1,19 @@
+<div class="field">
+  {% if field.items|length > 1 %}
+    {% if field.label is not empty %}
+      <div class="field__label">{{ field.label }}</div>
+    {% endif %}
+    <div class="field__items">
+      {% for item in field.items %}
+        <div class="field__item">{{ item }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% if field.label is not empty %}
+      <div class="field__label">{{ field.label }}</div>
+    {% endif %}
+    {% for item in field.items %}
+      <div class="field__item">{{ item }}</div>
+    {% endfor %}
+  {% endif %}
+</div>

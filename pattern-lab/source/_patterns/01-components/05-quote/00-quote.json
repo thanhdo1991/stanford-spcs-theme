@@ -1,0 +1,8 @@
+{
+  "blockQuote": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "quote": "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum!",
+    "author": "Janet Smith",
+    "position": "Aliquam lectus sed"
+  }
+}

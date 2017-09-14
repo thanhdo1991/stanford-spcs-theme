@@ -69,6 +69,15 @@ p {
     color: $link-color-darker;
   }
 
+  &--dark {
+    color: $text-color;
+
+    &:active,
+    &:hover {
+      color: $link-color-darker;
+    }
+  }
+
   &--semibold {
     font-weight: 600;
   }
@@ -110,4 +119,18 @@ code,
 kbd,
 samp {
   font-family: monospace;
+}
+
+blockquote {
+  p {
+    display: inline;
+  }
+
+  &:before {
+    content: '\201c';
+  }
+
+  &:after {
+    content: '\201d';
+  }
 }

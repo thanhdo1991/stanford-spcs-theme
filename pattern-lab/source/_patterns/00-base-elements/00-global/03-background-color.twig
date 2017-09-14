@@ -7,8 +7,6 @@
           {% set content = "<img src='//unsplash.it/300/90' />" %}
         {% endif %}
         <span class="sg-swatch {{ item.label }}">{{ content|default("") }}</span>
-        <span class="sg-label">Code: {{ item.code }}</span>
-        <br />
         <span class="sg-label">Class: {{ item.label }}</span>
       </li>
      {% endfor %}

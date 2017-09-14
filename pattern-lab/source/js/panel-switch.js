@@ -113,22 +113,22 @@
         link: "#006cb8",
       },
       colorSet1: {
-        primary: "#8c1515",
-        secondary: "#b1040e",
-        sub: "#00505c",
-        link: "#006cb8",
+        primary: "#3f647e",
+        secondary: "#dfbf8d",
+        sub: "#d0b9cd",
+        link: "#bbbbbb",
       },
       colorSet2: {
-        primary: "#8c1515",
-        secondary: "#b1040e",
+        primary: "#9f0000",
+        secondary: "#185b80",
         sub: "#00505c",
-        link: "#006cb8",
+        link: "#3d274d",
       },
       colorSet3: {
-        primary: "#8c1515",
-        secondary: "#b1040e",
-        sub: "#00505c",
-        link: "#006cb8",
+        primary: "#7691f2",
+        secondary: "#004fd6",
+        sub: "#cc9a00",
+        link: "#a280c5",
       }
     };
 
@@ -156,12 +156,13 @@
       var configs = {
         // Get color values
         colorSet: $('.js-color-set').val(),
+        feb: 'feb2',
         primaryColor: $('.primary-color').val(),
         secondaryColor: $('.secondary-color').val(),
         subColor: $('.sub-color').val(),
         linkColor: $('.link-color').val()
       };
-      Cookies.set('configs', configs );
+      Cookies.set('saveConfigs', configs );
     };
 
     // Click button save
@@ -175,8 +176,7 @@
 
     var loadCurrentConfig = function() {
       // Get cookies
-      var configsSaved = Cookies.getJSON('configs');
-      console.log(configsSaved);
+      var configsSaved = Cookies.getJSON('saveConfigs');
       if (!!configsSaved) {
         $.each( configsSaved, function( key, value ) {
           $("[name='" + key + "']").val(value);
