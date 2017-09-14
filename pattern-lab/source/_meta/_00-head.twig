@@ -10,6 +10,7 @@
     {{ patternLabHead | raw }}
     <!-- End Pattern Lab -->
     <!-- Css from theme -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Droid+Sans|Indie+Flower|Josefin+Sans|Lobster|Passion+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../../../../css/styles.css?{{ cacheBuster }}" media="all" />
     <!-- Css from theme -->
     <!-- Base js drupal 8 -->
@@ -19,7 +20,68 @@
     <script src="../../js/drupal/drupal.js?{{ cacheBuster }}"></script>
     <script src="../../js/drupal/picturefill.min.js?{{ cacheBuster }}"></script>
     <script src="../../js/drupal/modernizr.min.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/lib/js.cookie.js?{{ cacheBuster }}"></script>
+    <script src="../../../../js/panel-switch.js?{{ cacheBuster }}"></script>
     <!-- Base js drupal 8 -->
   </head>
   <body class="{{ bodyClass }}">
-
+  <div class="panel-switch">
+    <div class="panel-switch__icon js-show-hide"><i class="icon-cogs"></i></div>
+    <div class="panel-switch__content">
+      <h2 class="panel-switch__title">Color Option</h2>
+      <div class="panel-switch__color">
+        <div class="panel-switch__item">
+          <h4>Color set</h4>
+          <div class="panel-switch__item__inner">
+            <select class="color-set js-color-set" name="colorSet">
+              <option value="default">Default</option>
+              <option value="colorSet1">Color set one</option>
+              <option value="colorSet2">Color set two</option>
+              <option value="colorSet3">Color set three</option>
+              <option value="userCustom">Custom Color...</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Primary Color</h4>
+          <div class="panel-switch__item__inner">
+            <input value="#0D28FF" name="primaryColor" class="js-color-input form-control primary-color" type="text">
+            <span class="panel-switch__item__color">
+              <input class="js-color-picker primary-color" name="primaryColor" type="color" value="#0D28FF">
+            </span>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Secondary Color</h4>
+          <div class="panel-switch__item__inner">
+            <input value="#FF2869" name="secondaryColor" class="js-color-input form-control secondary-color" type="text">
+            <span class="panel-switch__item__color">
+              <input class="js-color-picker secondary-color" name="secondaryColor" type="color" value="#FF2869">
+            </span>
+          </div>
+        </div>
+        <div class="panel-switch__item">
+          <h4>Text Color</h4>
+          <div class="panel-switch__item__inner">
+            <input value="#112146" name="textColor" class="js-color-input form-control text-color" type="text">
+            <span class="panel-switch__item__color">
+              <input class="js-color-picker text-color" name="textColor" type="color" value="#112146">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="panel-switch__action">
+        <a href="#" class="js-save btn-save">
+          <span class="btn-text save">Save</span>
+          <span class="btn-icon"><i class="icon-check2"></i></span>
+        </a>
+        <a href="#" class="js-cancel btn-cancel">
+          <span class="btn-text cancel">cancel</span>
+          <span class="btn-icon">
+            <span class="approve js-confirm" href="#"><i class="icon-check2"></i></span>
+            <span class="not-approve js-confirm" href="#"><i class="icon-close"></i></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
