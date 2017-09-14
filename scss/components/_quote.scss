@@ -1,0 +1,74 @@
+.quote {
+  padding: rem(40px 0 42px);
+
+  @include susy-media(mobileLandscape) {
+    padding: rem(60px 0);
+  }
+
+  @include susy-media(tablet) {
+    padding: rem(65px 0 70px);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(86px 0 92px);
+  }
+
+  &__body {
+    font-size: rem(28px);
+    line-height: rem(38px);
+    margin-bottom: rem(22px);
+    padding-bottom: rem(26px);
+    position: relative;
+
+    @include susy-media(tablet) {
+      font-size: rem(32px);
+      letter-spacing: rem(-.5px);
+      line-height: rem(42px);
+      margin-bottom: rem(24px);
+      padding-bottom: rem(20px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(35px);
+      letter-spacing: rem(-1px);
+      line-height: rem(47px);
+    }
+
+    @include susy-media(desktopWide) {
+      @include pad(1 of $susy-desktop-wide);
+    }
+
+    &:after {
+      background-color: $silver;
+      bottom: 0;
+      content: '';
+      height: rem(1px);
+      left: 0;
+      margin: 0 auto;
+      max-width: rem(200px);
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  &__author {
+    color: $brand-primary;
+    margin-bottom: 0;
+  }
+
+  &.text--white {
+    .quote {
+      &__author {
+        color: $sun;
+      }
+
+      &__body {
+        &:after {
+          background-color: $white;
+          opacity: .3;
+        }
+      }
+    }
+  }
+}
