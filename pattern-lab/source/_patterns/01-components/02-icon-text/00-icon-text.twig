@@ -1,0 +1,16 @@
+<div class="icon-text {{ iconText.bgColor }}">
+  <div class="container">
+    <div class="icon-text__content">
+      <h3 class="icon-text__title">{{ iconText.title }}</h3>
+      <div class="icon-text__description">{{ iconText.description }}</div>
+    </div>
+
+    {% if iconText.items|length > 0 %}
+      <div class="icon-text__list">
+        {% for item in iconText.items %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
