@@ -1,0 +1,16 @@
+<div class="hero-banner has-image">
+  <div class="hero-banner__image">
+    {{ heroBanner.image }}
+  </div>
+
+  <div class="hero-banner__content-wrap">
+    <div class="container">
+      <div class="hero-banner__content text--center {{ heroBanner.bgColor }}">
+        {% if heroBanner.title is not empty %}
+          <h1 class="page-heading__title">{{ heroBanner.title|raw }}</h1>
+        {% endif %}
+        <div class="page-heading__subtitle">{{ heroBanner.subtitle }}</div>
+      </div>
+    </div>
+  </div>
+</div>
