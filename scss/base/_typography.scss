@@ -69,6 +69,15 @@ p {
     color: $link-brand-primary-darker;
   }
 
+  &--dark {
+    color: $text-color;
+
+    &:active,
+    &:hover {
+      color: $link-brand-primary-darker;
+    }
+  }
+
   &--semibold {
     font-weight: 600;
   }

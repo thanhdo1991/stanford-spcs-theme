@@ -29,18 +29,17 @@
 @import 'base/table';
 @import 'helpers/helpers';
 
-// Components
-@import 'components/hero-banner';
-
 // Vendors
 @import 'vendors/chosen';
+
+// Components
+@import 'components/hero-banner';
+@import 'components/grid-content';
+@import 'components/icon-text';
 
 // Layouts
 @import 'layouts/layout';
 @import 'layouts/navigation';
-
-// Components.
-@import 'components/icon-text';
 
 // Pages
 // @import 'pages/index';
