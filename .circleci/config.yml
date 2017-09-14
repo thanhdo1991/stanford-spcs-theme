@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.1.5-browsers
+      - image: drupaldocker/php:7.1-cli
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -20,5 +20,13 @@ jobs:
       - checkout
 
       - run:
-          name: deploy to Pantheon
+          name: Global setup
+          command: ./.circleci/setup-global.sh
+
+      - run:
+          name: Build patternlab
+          command: ./.circleci/build-styguide.sh
+
+      - run:
+          name: Deploy to Heroku
           command: ./.circleci/deploy-to-heroku.sh

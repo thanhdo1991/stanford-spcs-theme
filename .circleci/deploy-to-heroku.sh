@@ -1,14 +1,7 @@
 #!/bin/bash
 git config --global user.email "$HEROKU_EMAIL"
 git config --global user.name "Circle CI"
-
-echo "machine api.heroku.com
-          login $HEROKU_EMAIL
-          password $HEROKU_TOKEN
-        machine git.heroku.com
-          login $HEROKU_EMAIL
-          password $HEROKU_TOKEN" >> ~/.netrc
-chmod 600 ~/.netrc
+echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
 
 if [ $CIRCLE_BRANCH == $GIT_BRANCH_DEPLOY ]
@@ -24,7 +17,7 @@ then
   then
     # Clone the Pantheon repoa
     echo -e "\n${txtgrn}Cloning Heroku repository ${txtrst}"
-    heroku git:clone -a $HEROKU_APP_NAME .heroku --ssh-git
+    heroku git:clone -a $HEROKU_APP_NAME .heroku
   else
     echo -e "\n${txtgrn}Pull latest from Heroku ${txtrst}"
     git -C .heroku pull
