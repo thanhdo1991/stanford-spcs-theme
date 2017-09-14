@@ -1,0 +1,20 @@
+{
+  "imageLink": {
+    "class": "",
+    "href": "#",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-picture",
+        "with": {
+          "picture": {
+            "srcDesktop": "",
+            "srcTablet": "//unsplash.it/240/150",
+            "src": "//unsplash.it/175/200",
+            "alt": "SPCS picture"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}
