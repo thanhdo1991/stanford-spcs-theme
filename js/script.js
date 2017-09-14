@@ -25,4 +25,17 @@
     $jsPlayVideo.on('click', playVideo);
   }
 
+  // Chosen
+  var configChosen = {
+      width: "auto",
+      disable_search_threshold: 15,
+      placeholder_text_multiple: ' '
+    };
+
+  Drupal.behaviors.selectChosen = {
+    attach: function (context, settings) {
+      $('select').chosen(configChosen);
+    }
+  };
+
 }(this, this.document, this.jQuery));
