@@ -29,15 +29,17 @@
 @import 'base/table';
 @import 'helpers/helpers';
 
+// Components
+@import 'components/hero-banner';
+@import 'components/icon-text';
+@import 'components/quote';
+
 // Vendors
 @import 'vendors/chosen';
 
 // Layouts
 @import 'layouts/layout';
 @import 'layouts/navigation';
-
-// Components.
-@import 'components/quote';
 
 // Pages
 // @import 'pages/index';

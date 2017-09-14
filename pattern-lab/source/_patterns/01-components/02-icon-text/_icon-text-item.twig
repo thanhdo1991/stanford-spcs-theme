@@ -1,0 +1,17 @@
+<div class="icon-text__item">
+  {% if iconTextItem.icon is not empty %}
+    <div class="icon-text__icon">
+      <i class="{{ iconTextItem.icon }}"></i>
+    </div>
+  {% endif %}
+
+  <div class="icon-text__wrap">
+    {% if iconTextItem.title is not empty %}
+      <h5 class="icon-text__text-title">{{ iconTextItem.title }}</h5>
+    {% endif %}
+
+    {% if iconTextItem.subtitle is not empty %}
+      <div class="icon-text__text-subtitle">{{ iconTextItem.subtitle }}</div>
+    {% endif %}
+  </div>
+</div>
