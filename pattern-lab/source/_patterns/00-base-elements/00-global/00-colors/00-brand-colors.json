@@ -1,0 +1,31 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$primary-color",
+                "class": "bg--primary"
+              },
+              {
+                "variable": "$secondary-color",
+                "class": "bg--secondary"
+              },
+              {
+                "variable": "$sub-color",
+                "class": "bg--sub"
+              },
+              {
+                "variable": "$link-color",
+                "class": "bg--link"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

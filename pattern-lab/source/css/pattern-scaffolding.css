@@ -52,3 +52,25 @@
   font-size: 90%;
   line-height: 1;
 }
+
+.sg-colors .bg--primary + .sg-label:after,
+.sg-colors .bg--secondary + .sg-label:after,
+.sg-colors .bg--sub + .sg-label:after,
+.sg-colors .bg--link + .sg-label:after {
+  display: block;
+}
+.sg-colors .bg--primary + .sg-label:after {
+  content: var(--primary-color-code, "Code: #8c1515");
+}
+
+.sg-colors .bg--secondary + .sg-label:after {
+  content: var(--secondary-color-code, "Code: #b1040e");
+}
+
+.sg-colors .bg--sub + .sg-label:after {
+  content: var(--sub-color-code, "Code: #00505c");
+}
+
+.sg-colors .bg--link + .sg-label:after {
+  content: var(--link-color-code, "Code: #006cb8");
+}

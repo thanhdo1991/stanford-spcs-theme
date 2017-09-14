@@ -31,20 +31,20 @@
 // Backgrounds
 .bg {
   // Brand backgrounds
-  &--brand-primary {
-    background-color: $brand-primary;
+  &--primary-color {
+    background-color: $primary-color;
   }
 
-  &--brand-secondary {
-    background-color: $brand-secondary;
+  &--secondary-color {
+    background-color: $secondary-color;
   }
 
-  &--sub-brand-primary {
-    background-color: $sub-brand-primary;
+  &--sub-color {
+    background-color: $sub-color;
   }
 
-  &--link-brand-primary {
-    background-color: $link-brand-primary;
+  &--link-color {
+    background-color: $link-color;
   }
 
   // Light backgrounds

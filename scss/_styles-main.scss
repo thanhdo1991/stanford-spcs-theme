@@ -30,13 +30,19 @@
 @import 'base/table';
 @import 'helpers/helpers';
 
+// Components
+@import 'components/hero-banner';
+
 // Vendors
-//@import 'vendors/chosen';
+@import 'vendors/chosen';
 @import 'vendors/panel-switch';
 
 // Layouts
 @import 'layouts/layout';
 @import 'layouts/navigation';
+
+// Components.
+@import 'components/icon-text';
 
 // Pages
 // @import 'pages/index';

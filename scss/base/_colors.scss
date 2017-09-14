@@ -39,8 +39,8 @@ $positive-color: #2dcc70;
 $text-color: $black;
 
 // BRAND COLORS
-$brand-primary: var(--primary-color, $red);
-$brand-secondary: var(--secondary-color, $red-light);
-$sub-brand-primary: var(--sub-brand-color, $blue-darker);
-$link-brand-primary: var(--link-brand-color, $blue);
-$link-brand-primary-darker: darken($blue, 10%);
+$primary-color: var(--primary-color, $red);
+$secondary-color: var(--secondary-color, $red-light);
+$sub-color: var(--sub-color, $blue-darker);
+$link-color: var(--link-color, $blue);
+$link-color-darker: darken($blue, 10%);

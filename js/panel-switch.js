@@ -13,12 +13,6 @@
     var toggleFunction = function (btn, flag) {
       var $btn = btn,
         $parent = $btn.parent();
-      $(document).on('touchstart click', function (e) {
-        if ($parent.has(e.target).length === 0 && $parent.hasClass(flag)) {
-          $parent.removeClass(flag);
-          $('html').removeClass(flag);
-        }
-      });
 
       $btn.on('click', function () {
         if (!$parent.hasClass(flag)) {
@@ -40,7 +34,6 @@
     // Update style of color and font
     var updateStyle = function() {
       var $colorInput = $('.js-color-picker'),
-        $fontInput = $('.js-font-input'),
         $currentBody = $('body'),
         styleCode = '';
 
@@ -51,18 +44,9 @@
         // Conver Name of input into css Variable name
         var cssVar = thisName.replace(/([A-Z])/g, '-$1').trim().toLowerCase();
         styleCode += '--' + cssVar + ': ' + thisValue + ';';
+        styleCode += '--' + cssVar + '-code: "Code: ' + thisValue + '";';
       });
 
-      $fontInput.each(function(){
-        var thisName = $(this).attr("name"),
-          thisValue = $(this).val().replace('-', ' ');
-
-        // Conver Name of input into css Variable name
-        var cssVar = thisName.replace(/([A-Z])/g, '-$1').trim().toLowerCase();
-        styleCode += '--' + cssVar + ': ' + thisValue + ';';
-      });
-
-      console.log(styleCode);
       $currentBody.attr('style', styleCode);
     };
 
@@ -123,24 +107,28 @@
     var selectboxColorSet = $(".js-color-set");
     var objectColorSet = {
       default: {
-        primary: "#0D28FF",
-        secondary: "#FF2869",
-        text: "#112146"
+        primary: "#8c1515",
+        secondary: "#b1040e",
+        sub: "#00505c",
+        link: "#006cb8",
       },
       colorSet1: {
-        primary: "#ffe74c",
-        secondary: "#ff5964",
-        text: "#333333"
+        primary: "#8c1515",
+        secondary: "#b1040e",
+        sub: "#00505c",
+        link: "#006cb8",
       },
       colorSet2: {
-        primary: "#2a9134",
-        secondary: "#ffcf9c",
-        text: "#000000"
+        primary: "#8c1515",
+        secondary: "#b1040e",
+        sub: "#00505c",
+        link: "#006cb8",
       },
       colorSet3: {
-        primary: "#a4d4b4",
-        secondary: "#f72956",
-        text: "#04141d"
+        primary: "#8c1515",
+        secondary: "#b1040e",
+        sub: "#00505c",
+        link: "#006cb8",
       }
     };
 
@@ -149,12 +137,14 @@
         $colorPalette = $(this).parents('.panel-switch__color'),
         $primaryInput = $colorPalette.find('.primary-color'),
         $secondaryInput = $colorPalette.find('.secondary-color'),
-        $textInput = $colorPalette.find('.text-color');
+        $subInput = $colorPalette.find('.sub-color');
+        $linkInput = $colorPalette.find('.link-color');
 
       if(colorSet != 'userCustom') {
         $primaryInput.val(objectColorSet[colorSet]["primary"]);
         $secondaryInput.val(objectColorSet[colorSet]["secondary"]);
-        $textInput.val(objectColorSet[colorSet]["text"]);
+        $subInput.val(objectColorSet[colorSet]["sub"]);
+        $linkInput.val(objectColorSet[colorSet]["link"]);
           // Change color for css variable
         updateStyle();
       }
@@ -168,7 +158,8 @@
         colorSet: $('.js-color-set').val(),
         primaryColor: $('.primary-color').val(),
         secondaryColor: $('.secondary-color').val(),
-        textColor: $('.text-color').val()
+        subColor: $('.sub-color').val(),
+        linkColor: $('.link-color').val()
       };
       Cookies.set('configs', configs );
     };

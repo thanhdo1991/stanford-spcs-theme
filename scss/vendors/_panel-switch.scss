@@ -1,3 +1,14 @@
+// Adding effect for html tag
+html {
+  padding-left: 0;
+  transition: .5s;
+
+  &.is-active {
+    padding-left: 15.625rem;
+    transition: .5s;
+  }
+}
+
 .panel-switch {
   @include helvetica;
   background-color: $gray-17;

@@ -61,12 +61,12 @@ p {
 
 %link,
 .link {
-  color: $link-brand-primary;
+  color: $link-color;
   text-decoration: none;
 
   &:active,
   &:hover {
-    color: $link-brand-primary-darker;
+    color: $link-color-darker;
   }
 
   &--semibold {
@@ -79,9 +79,10 @@ a {
 }
 
 em {
-  font-size: italic;
+  font-style: italic;
 }
 
+b,
 strong {
   font-weight: 700;
 }
