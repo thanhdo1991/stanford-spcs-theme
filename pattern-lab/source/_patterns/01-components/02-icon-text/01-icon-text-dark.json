@@ -1,0 +1,61 @@
+{
+  "iconText": {
+    "title": "Discover, study, and explore with students from around the world.",
+    "description": "<p>The Summer Institutes provide an opportunity for students to pursue their intellectual curiosity and meet others who share their interests and abilities.</p>",
+    "bgColor": "bg--clay text--white",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-icon-text-item",
+          "with": {
+            "iconTextItem": {
+              "icon": "icon-version",
+              "title": "Ut eget imperdiet neque.",
+              "subtitle": "<p>In volutpat ante semper diam molestie, et aliquam erat laoreet.</p>"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-icon-text-item",
+          "with": {
+            "iconTextItem": {
+              "icon": "icon-dpx-wrap-text-around",
+              "title": "Phasellus ligula ipsum.",
+              "subtitle": "<p> Volutpat eget semper id, viverra eget nibh.</p>"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-icon-text-item",
+          "with": {
+            "iconTextItem": {
+              "icon": "icon-replicate",
+              "title": "Sed sit amet arcu aliquet.",
+              "subtitle": "<p>Molestie justo at, auctor nunc.</p>"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-icon-text-item",
+          "with": {
+            "iconTextItem": {
+              "icon": "icon-global-customers",
+              "title": "Suspendisse luctus mattis.",
+              "subtitle": "<p>Cursus nam consectetur ante at nisl hendrerit gravida.</p>"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
