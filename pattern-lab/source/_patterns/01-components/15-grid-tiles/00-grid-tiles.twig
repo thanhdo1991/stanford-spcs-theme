@@ -1,0 +1,9 @@
+<div class="grid-tiles {{ gridTiles.bgColor }}">
+  <div class="container">
+    <div class="grid-tiles__grid">
+      {% for item in gridTiles.items %}
+        <div class="grid-tiles__grid__item bg--white text--dark">{{ item }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

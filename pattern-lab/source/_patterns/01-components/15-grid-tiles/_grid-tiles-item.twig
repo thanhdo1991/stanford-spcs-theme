@@ -1,0 +1,11 @@
+<div class="grid-tiles__group">
+  {% if gridTilesItem.title is not empty %}
+    <h4 class="grid-tiles__title">{{ gridTilesItem.title }}</h4>
+  {% endif %}
+  {% if gridTilesItem.body is not empty %}
+    <div class="grid-tiles__body text--small typography-space-small">{{ gridTilesItem.body }}</div>
+  {% endif %}
+</div>
+{% if gridTilesItem.link is not empty %}
+  <div class="grid-tiles__link-hover">{{ gridTilesItem.link }}</div>
+{% endif %}
