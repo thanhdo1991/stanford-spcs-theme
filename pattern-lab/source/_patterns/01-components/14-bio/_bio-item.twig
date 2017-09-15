@@ -1,4 +1,14 @@
-<div class="block-bio__image">{{ blockBioItem.image }}</div>
-<h4 class="block-bio__title">{{ blockBioItem.title }}</h4>
-<div class="block-bio__description">{{ blockBioItem.description }}</div>
-<div class="block-bio__link-hover">{{ blockBioItem.link }}</div>
+{% if blockBioItem.image is not empty %}
+  <div class="block-bio__image">{{ blockBioItem.image }}</div>
+{% endif %}
+<div class="block-bio__group">
+  {% if blockBioItem.title is not empty %}
+    <h4 class="block-bio__title">{{ blockBioItem.title }}</h4>
+  {% endif %}
+  {% if blockBioItem.description is not empty %}
+    <div class="block-bio__description text--small typography-space-small">{{ blockBioItem.description }}</div>
+  {% endif %}
+</div>
+{% if blockBioItem.link is not empty %}
+  <div class="block-bio__link-hover">{{ blockBioItem.link }}</div>
+{% endif %}
