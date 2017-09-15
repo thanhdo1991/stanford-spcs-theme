@@ -119,45 +119,6 @@
           },
           "only": true
         }
-      },
-      {
-        "include()": {
-          "pattern": "components-bio-item",
-          "with": {
-            "blockBioItem": {
-              "image": {
-                "include()": {
-                  "pattern": "base-elements-picture",
-                  "with": {
-                    "picture": {
-                      "srcDesktop": "",
-                      "srcTablet": "//unsplash.it/308/188",
-                      "src": "//unsplash.it/352/280",
-                      "alt": "SPCS picture"
-                    },
-                    "only": true
-                  }
-                }
-              },
-              "title": "Betty Grzymala-Busse",
-              "description": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum.</p>",
-              "link": {
-                "include()": {
-                  "pattern": "base-elements-link",
-                  "with": {
-                    "link": {
-                      "class": "",
-                      "href": "#",
-                      "text": "link"
-                    },
-                    "only": true
-                  }
-                }
-              }
-            }
-          },
-          "only": true
-        }
       }
     ],
     "buttonLink": {
