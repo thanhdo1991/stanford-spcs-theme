@@ -1,0 +1,15 @@
+<div class="block-bio {{ blockBio.bgColor }}">
+  <div class="container">
+    {% if blockBio.title is not empty %}
+      <h1 class="block-bio__big-title text--center">{{ blockBio.title|raw }}</h1>
+    {% endif %}
+    <div class="block-bio__grid">
+      {% for item in blockBio.items %}
+        <div class="grid-content__grid__item bg--white text--dark">{{ item }}</div>
+      {% endfor %}
+    </div>
+    {% if blockBio.buttonLink is not empty %}
+      <div class="block-bio__btn text--center">{{ blockBio.buttonLink }}</div>
+    {% endif %}
+  </div>
+</div>
