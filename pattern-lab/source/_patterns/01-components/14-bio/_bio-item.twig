@@ -5,8 +5,8 @@
   {% if blockBioItem.title is not empty %}
     <h4 class="block-bio__title">{{ blockBioItem.title }}</h4>
   {% endif %}
-  {% if blockBioItem.description is not empty %}
-    <div class="block-bio__description text--small typography-space-small">{{ blockBioItem.description }}</div>
+  {% if blockBioItem.body is not empty %}
+    <div class="block-bio__body text--small typography-space-small">{{ blockBioItem.body }}</div>
   {% endif %}
 </div>
 {% if blockBioItem.link is not empty %}

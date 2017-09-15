@@ -23,7 +23,7 @@
                 }
               },
               "title": "Michael Howell",
-              "description": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
+              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -62,7 +62,7 @@
                 }
               },
               "title": "Marshall Johnston",
-              "description": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -101,7 +101,7 @@
                 }
               },
               "title": "Francis Farmer",
-              "description": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
@@ -140,7 +140,7 @@
                 }
               },
               "title": "Betty Grzymala-Busse",
-              "description": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum.</p>",
+              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum.</p>",
               "link": {
                 "include()": {
                   "pattern": "base-elements-link",
