@@ -7,19 +7,19 @@
           "with": {
             "colors": [
               {
-                "variable": "$brand-primary",
+                "variable": "$primary-color",
                 "class": "bg--primary-color"
               },
               {
-                "variable": "$brand-secondary",
+                "variable": "$secondary-color",
                 "class": "bg--secondary-color"
               },
               {
-                "variable": "$sub-brand-primary",
+                "variable": "$sub-color",
                 "class": "bg--sub-color"
               },
               {
-                "variable": "$link-brand-primary",
+                "variable": "$link-color",
                 "class": "bg--link-color"
               }
             ]
