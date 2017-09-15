@@ -1,13 +1,15 @@
-<div class="footer-bar bg--brand-secondary text--white">
+<div class="footer-bar bg--secondary-color text--white">
   <div class="container">
-    <div class="footer-bar__temperature">
-      <span class="{{ footerBar.weatherClass }}"></span>
-      <span class="temperature">{{ footerBar.temperature }}</span>
+    <div class="footer-bar__inner">
+      <div class="footer-bar__temperature">
+        <span class="temperature-icon {{ footerBar.weatherClass }}"></span>
+        <span class="temperature">{{ footerBar.temperature }}</span>
+        </div>
+      <div class="footer-bar__time">
+        <span class="time">{{ footerBar.time }}</span>
+        <span class="datetime">{{ footerBar.datetime }}</span>
+        <span class="location">({{ footerBar.location }})</span>
       </div>
-    <div class="footer-bar__time">
-      <span class="time">{{ footerBar.time }}</span>
-      <span class="datetime">{{ footerBar.datetime }}</span>
-      <span class="location">({{ footerBar.location }})</span>
     </div>
   </div>
 </div>

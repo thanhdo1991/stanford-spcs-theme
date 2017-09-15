@@ -1,19 +1,63 @@
 .footer-bar {
   font-weight: 300;
-  padding: rem(15px) 0;
+  padding: rem(30px) 0 rem(25px);
 
-  &__temperature {
-    @include span(50% no-gutters);
+  @include susy-media(tablet) {
+    padding: rem(11px) 0 rem(6px);
   }
 
-  &__time {
-    @include span(50% no-gutters last);
-    text-align: right;
+  &__inner {
+    align-items:center;
+    display:flex;
+    flex-flow:row wrap;
+    place-content:stretch flex-start;
+
+    @include susy-media(mobileOnly) {
+      position: relative;
+      text-align: center;
+
+      &:before {
+        border-left: rem(1px) solid;
+        bottom: rem(5px);
+        content: '';
+        left: 50%;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
+  &__time,
+  &__temperature {
+    @include susy-media(mobileOnly) {
+      padding: 0 rem(20px);
+    }
 
     span {
       display: inline-block;
+      margin-bottom: rem(5px);
       vertical-align: middle;
-      margin-right: rem(7px);
+    }
+  }
+
+  &__temperature {
+    width: 50%;
+
+    .temperature-icon {
+      font-size: rem(26px);
+      margin-right: rem(8px);
+    }
+  }
+
+  &__time {
+    width: 50%;
+
+    @include susy-media(tablet) {
+      text-align: right;
+    }
+
+    span {
+      margin-right: rem(6px);
 
       &:last-of-type {
         margin-right: 0;
@@ -22,6 +66,8 @@
 
     .time {
       font-size: rem(30px);
+      position: relative;
+      top: rem(-1px);
     }
   }
 }
