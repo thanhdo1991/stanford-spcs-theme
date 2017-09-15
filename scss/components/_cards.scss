@@ -2,39 +2,52 @@ $cards-space-tablet: 15px;
 $cards-space-desktop: 24px;
 
 .cards {
-  padding: rem(40px 0 10px);
+  margin: rem(50px 0);
+  padding: rem(30px 0 26px);
 
   @include susy-media(tablet) {
-    padding: rem(50px 0 20px);
+    padding: rem(50px 0 39px);
   }
 
-  // &.container {
-  //   padding: rem(40px 0 10px);
+  @include susy-media(desktopSuperwide) {
+    padding: rem(70px 0 59px);
+  }
 
-  //   @include susy-media(tablet) {
-  //     padding: rem(50px 0 20px);
-  //   }
-  // }
+  &__title {
+    margin-bottom: rem(32px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(36px);
+    }
+  }
 
   &__image {
     line-height: 0;
-    margin: 0 rem(-20px 30px);
+    margin: rem(0 -22px 17px);
+
+    @include susy-media(tablet) {
+      margin: rem(0 -20px 19px);
+    }
   }
 
   &__group {
     overflow: hidden;
-    padding: rem(0 20px 30px);
+    padding: rem(0 22px 7px);
+
+    @include susy-media(tablet) {
+      padding: rem(0 20px 8px);
+    }
   }
 
   &__item {
-    margin-bottom: rem(30px);
-    box-shadow: rem(0 0 8px 0) rgba($black, .1);
-    transition: all .45s ease;
+    border-bottom: rem(5px) solid $brand-primary;
+    box-shadow: 0 0 rem(10px) 0 rgba($black, .15);
+    margin-bottom: rem(15px);
     position: relative;
+    transition: all .45s ease;
 
     @include susy-media(tablet) {
       align-self: stretch;
-      margin-bottom: rem(15px);
       margin-left: rem($cards-space-tablet);
       width: calc((100% - #{rem($cards-space-tablet)}) / 2);
 
@@ -44,7 +57,7 @@ $cards-space-desktop: 24px;
     }
 
     @include susy-media(desktop) {
-      margin-bottom: rem(30px);
+      margin-bottom: rem($cards-space-desktop);
       margin-left: rem($cards-space-desktop);
       width: calc((100% - #{rem($cards-space-desktop)}) / 2);
 
@@ -57,8 +70,15 @@ $cards-space-desktop: 24px;
       box-shadow: rem(0 1px 8px 0) rgba($black, .8);
     }
 
+    &__title {
+      margin-bottom: rem(17px);
+
+      @include susy-media(tablet) {
+        margin-bottom: rem(13px);
+      }
+    }
+
     &__description {
-      color: $text-color;
       margin-bottom: rem(15px);
     }
 
@@ -67,19 +87,26 @@ $cards-space-desktop: 24px;
         @extend %link-hover-conver;
       }
     }
+
+    .text--white & {
+      box-shadow: 0 0 rem(10px) 0 rgba($white, .15);
+
+      &:hover {
+        box-shadow: rem(0 1px 8px 0) rgba($white, .8);
+      }
+    }
   }
 
   &__grid {
+    margin-bottom: rem(24px);
+
     @include susy-media(tablet) {
       align-content: flex-start;
       align-items: flex-start;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-    }
-
-    @include susy-media(desktop) {
-      // margin: 0 rem(-15px);
+      margin-bottom: rem(10px);
     }
 
     &--6-items,
@@ -168,19 +195,14 @@ $cards-space-desktop: 24px;
       }
     }
   }
-}
 
+  &__btn {
+    padding-bottom: rem(24px);
+    padding-top: rem(20px);
 
-.bg--outer-space,
-.bg--blue,
-.bg--stanford-black,
-.bg--stanford-cgray,
-.bg--cardinal {
-  .block-cards__item {
-    // box-shadow: rem(0 0 8px 0) rgba($gray-e0, .3);
-
-    &:hover {
-      // box-shadow: rem(0 1px 8px 1px) rgba($gray-e0, 1);
+    @include susy-media(tablet) {
+      padding-bottom: rem(25px);
+      padding-top: rem(13px);
     }
   }
 }

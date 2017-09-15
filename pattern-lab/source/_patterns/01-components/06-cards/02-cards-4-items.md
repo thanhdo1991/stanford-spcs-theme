@@ -1,5 +1,5 @@
 ---
-title: Cards dark
+title: Cards 4 items
 ---
 
-This is Cards dark component.
+This is Cards items.
