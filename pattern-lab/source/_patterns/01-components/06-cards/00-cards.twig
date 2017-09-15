@@ -1,0 +1,19 @@
+<div class="cards {{ cards.bgColor }}">
+  <div class="container">
+    {% if cards.title %}
+      <h1 class="cards__title text--center">{{ cards.title }}</h1>
+    {% endif %}
+
+    {% if cards.items is not empty %}
+      <div class="cards__grid cards__grid--{{ cards.items|length }}-items">
+        {% for item in cards.items %}
+          <div class="cards__item bg--white text--dark">{{ item }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if cards.buttonLink is not empty %}
+      <div class="cards__btn text--center">{{ cards.buttonLink }}</div>
+    {% endif %}
+  </div>
+</div>

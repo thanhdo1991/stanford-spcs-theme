@@ -23,3 +23,16 @@
   position: absolute;
   width: rem(1px);
 }
+
+%link-hover-conver {
+  opacity: 0;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+  z-index: 1;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%
+}
