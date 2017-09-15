@@ -18,6 +18,10 @@
     @include susy-media(tablet) {
       padding: rem(34px) 0 rem(50px);
     }
+
+    .text--white & {
+      box-shadow: 0 0 rem(10px) 0 rgba($white, .15);
+    }
   }
 
   &__images-wrap {

@@ -17,6 +17,11 @@
     font-weight: 600;
   }
 
+  &--small {
+    font-size: rem(16px);
+    line-height: rem(20px);
+  }
+
   // Text white
   &--white {
     color: $white;
