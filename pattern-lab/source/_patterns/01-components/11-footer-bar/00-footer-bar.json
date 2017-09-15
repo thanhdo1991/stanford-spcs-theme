@@ -1,0 +1,10 @@
+{
+  "footerBar": {
+    "weatherClass": "icon-sun",
+    "weatherText": "Sunny",
+    "temperature": "82&#xB0; F / 28&#xB0; C",
+    "time": "11:24",
+    "datetime": "AM",
+    "location": "Pacific / Stanford time"
+  }
+}

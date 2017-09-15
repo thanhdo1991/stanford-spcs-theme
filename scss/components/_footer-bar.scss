@@ -1,0 +1,27 @@
+.footer-bar {
+  font-weight: 300;
+  padding: rem(15px) 0;
+
+  &__temperature {
+    @include span(50% no-gutters);
+  }
+
+  &__time {
+    @include span(50% no-gutters last);
+    text-align: right;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: rem(7px);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    .time {
+      font-size: rem(30px);
+    }
+  }
+}
