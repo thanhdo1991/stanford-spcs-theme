@@ -1,0 +1,18 @@
+{
+  "cta": {
+    "title": "Join our mailing list",
+    "description": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui.",
+    "link": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "href": "#",
+            "text": "Learn more"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}
