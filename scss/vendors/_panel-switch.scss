@@ -1,0 +1,259 @@
+// Adding effect for html tag
+html {
+  padding-left: 0;
+  transition: .5s;
+
+  &.is-active {
+    padding-left: 15.625rem;
+    transition: .5s;
+  }
+}
+
+.panel-switch {
+  @include helvetica;
+  background-color: $gray-17;
+  bottom: 0;
+  height: 100%;
+  left: rem(-250px);
+  position: fixed;
+  top: 0;
+  width: rem(250px);
+  transition: .5s;
+  z-index: 9999;
+  padding: rem(15px);
+
+  h2, h3, h4, h5 {
+    @include helvetica;
+  }
+
+  &.is-active {
+    left: 0;
+    transition: .5s;
+  }
+
+  &__content {
+    height: 100%;
+  }
+
+  &__icon {
+    background-color: $gray-17;
+    border-radius: rem(0 6px 6px 0);
+    color: $white;
+    height: rem(40px);
+    line-height: rem(40px);
+    position: absolute;
+    right: rem(-40px);
+    text-align: center;
+    top: rem(35px);
+    width: rem(40px);
+    cursor: pointer;
+  }
+
+  &__title {
+    color: $white;
+    font-size: rem(16px);
+    font-weight: 600;
+    margin-bottom: rem(10px);
+  }
+
+  &__item {
+    margin-bottom: rem(10px);
+
+    h4 {
+      font-size: rem(14px);
+      color: $gray-99;
+      line-height: 1.3;
+      margin-bottom: rem(5px);
+    }
+
+    input[type="color"],
+    input[type="text"] {
+      border: 0;
+      padding: 0;
+      border-radius: 0;
+      color: $gray-55;
+      outline: none;
+      appearance: none;
+    }
+
+    input[type="text"] {
+      padding: rem(5px);
+      width: 100%;
+    }
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border: none;
+    }
+
+    .chosen-container {
+      display: none !important;
+    }
+
+    select {
+      width: 100%;
+      border: 0;
+      display: block !important;
+      height: rem(25px);
+      padding: rem(0 5px);
+      -moz-appearance: none;
+      -webkit-appearance:none;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=");
+      background-position: right 50%;
+      background-repeat: no-repeat;
+      padding: 0.5em 1.5em 0.5em 0.5em;
+
+      &:focus,
+      &:hover,
+      &:active {
+        outline: none;
+      }
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    &__inner {
+      background-color: $white;
+      border: 1px solid $silver;
+      border-radius: rem(4px);
+      color: $gray-55;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__color {
+      background-color: $gray-ee;
+      border-left: 1px solid $silver;
+      line-height: 0;
+      padding: rem(5px 10px);
+
+      input {
+        width: rem(16px);
+        height: rem(16px);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .form-radio {
+    font-size: rem(13px);
+    padding: rem(3px 0);
+
+    input {
+      cursor: pointer;
+      margin: rem(0 3px);
+    }
+  }
+
+  &__action {
+    a {
+      background-color: $green;
+      color: $white;
+      padding: rem(7px);
+      outline: none;
+      min-width: rem(90px);
+      border-radius: rem(5px);
+      font-size: rem(14px);
+      text-transform: uppercase;
+      margin-right: rem(5px);
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      overflow: hidden;
+      height: rem(35px);
+      position: relative;
+      font-weight: bold;
+
+      &:hover {
+        background-color: lighten($green, 5%);
+      }
+
+      &.btn-cancel {
+        background-color: $red-9c;
+
+        &:hover {
+          background-color: lighten($red-9c, 5%);
+        }
+      }
+
+      .btn-text,
+      .btn-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform .5s;
+        transform: translate(0, 0);
+        border-radius: rem(5px);
+        overflow: hidden;
+      }
+
+      .btn-icon {
+        transform: translate(0, 60px);
+
+        i:before {
+          font-weight: bold;
+          font-size: rem(22px);
+        }
+
+        .approve,
+        .not-approve {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: rem(35px);
+          transition: width .5s;
+
+          &.hide {
+            width: 0;
+            visibility: hidden;
+            transition: width .5s;
+          }
+
+          &.is-active {
+            width: 100%;
+            transition: width .5s;
+          }
+        }
+
+        .approve {
+          background-color: $green;
+
+          &:hover {
+            background-color: lighten($green, 5%);
+          }
+        }
+
+        .not-approve {
+          background-color: $red-9c;
+
+          &:hover {
+            background-color: lighten($red-9c, 5%);
+          }
+        }
+      }
+
+      &.is-active {
+        .btn-text {
+          transform: translate(0, -60px);
+          transition: transform .5s;
+        }
+
+        .btn-icon {
+          transform: translate(0, 0);
+          transition: transform .5s;
+        }
+      }
+    }
+  }
+}

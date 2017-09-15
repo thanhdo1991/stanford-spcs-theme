@@ -19,7 +19,7 @@ $pull-block-hero: 20px;
   }
 
   &__content-wrap {
-    border-top: rem(10px) solid $sub-brand-primary;
+    border-top: rem(10px) solid $sub-color;
     position: relative;
 
     @include susy-media(mobileOnly) {
@@ -27,7 +27,7 @@ $pull-block-hero: 20px;
     }
 
     @include susy-media(tablet) {
-      border-top: rem(30px) solid $sub-brand-primary;
+      border-top: rem(30px) solid $sub-color;
     }
 
     .container {

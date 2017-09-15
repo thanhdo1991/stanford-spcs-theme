@@ -130,7 +130,7 @@ input[type='radio'] {
       top: rem(3px);
       width: rem(16px);
       height: rem(16px);
-      border: rem(2px) solid $link-brand-primary;
+      border: rem(2px) solid $link-color;
     }
 
     &:after {
@@ -152,7 +152,7 @@ input[type='radio'] {
   &:checked {
     & + label {
       &:before {
-        border-color: $link-brand-primary;
+        border-color: $link-color;
       }
 
       &:after {
@@ -170,7 +170,7 @@ input[type='radio'] {
 
     &:after {
       content: '';
-      background: $link-brand-primary;
+      background: $link-color;
       border-radius: 100%;
       height: rem(12px);
       left: rem(4px);
@@ -197,7 +197,7 @@ input[type='checkbox'] {
       width: rem(20px);
       height: rem(20px);
       line-height: rem(20px);
-      background-color: $link-brand-primary;
+      background-color: $link-color;
     }
   }
 }
@@ -209,7 +209,7 @@ input[type='checkbox'] {
 .touchevents {
   .form-type-select {
     .select-arrow-icon {
-      color: $link-brand-primary;
+      color: $link-color;
       margin-top: rem(18px);
       position: absolute;
       right: rem(20px);

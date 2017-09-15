@@ -1,0 +1,39 @@
+{
+  "componentsList": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-elements-colors",
+          "with": {
+            "colors": [
+              {
+                "variable": "$black",
+                "code": "#2e2d29"
+              },
+              {
+                "variable": "$light-sandstone",
+                "code": "#f9f6ef"
+              },
+              {
+                "variable": "$fog",
+                "code": "#f4f4f4"
+              },
+              {
+                "variable": "$clay",
+                "code": "#5f574f"
+              },
+              {
+                "variable": "$brown",
+                "code": "#2f2424"
+              },
+              {
+                "variable": "$sun",
+                "code": "#ffe16b"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

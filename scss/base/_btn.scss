@@ -1,9 +1,9 @@
 // Button
 .btn {
   @include SourceSansPro;
-  background-color: $brand-secondary;
+  background-color: $secondary-color;
   background-image: none;
-  border-color: $brand-secondary;
+  border-color: $secondary-color;
   border-radius: 0;
   border-style: solid;
   border-width: rem(1px);
@@ -28,8 +28,8 @@
 
   &:active,
   &:hover {
-    background-color: $brand-primary;
-    border-color: $brand-primary;
+    background-color: $primary-color;
+    border-color: $primary-color;
     color: $white;
   }
 
@@ -41,8 +41,8 @@
     &:active,
     &:hover {
       background-color: $white;
-      border-color: $brand-secondary;
-      color: $brand-secondary;
+      border-color: $secondary-color;
+      color: $secondary-color;
     }
   }
 }

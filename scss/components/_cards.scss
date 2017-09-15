@@ -40,7 +40,7 @@ $cards-space-desktop: 24px;
   }
 
   &__item {
-    border-bottom: rem(5px) solid $brand-primary;
+    border-bottom: rem(5px) solid $primary-color;
     box-shadow: 0 0 rem(10px) 0 rgba($black, .15);
     margin-bottom: rem(15px);
     position: relative;
