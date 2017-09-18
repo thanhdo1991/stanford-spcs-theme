@@ -1,0 +1,187 @@
+{
+  "gridImage": {
+    "title": " A unique academic experience",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Link"
+                      },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Link"
+                      },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Link"
+                      },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Link"
+                      },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-image-item",
+          "with": {
+            "gridImageItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "//unsplash.it/770/435",
+                      "srcTablet": "//unsplash.it/577/330",
+                      "src": "//unsplash.it/768/564",
+                      "alt": "SPCS image"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                      "link": {
+                        "href": "#",
+                        "text": "Link"
+                      },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

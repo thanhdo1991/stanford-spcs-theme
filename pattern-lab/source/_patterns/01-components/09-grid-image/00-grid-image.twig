@@ -1,0 +1,30 @@
+{% set totalSlides = gridImage.items|length %}
+
+<div class="grid-image js-grid-image">
+  <div class="container">
+    {% if gridImage.title %}
+      <h1 class="grid-image__title text--center">{{ gridImage.title }}</h1>
+    {% endif %}
+    {% if gridImage.items %}
+      <div class="grid-image__grid grid-image__grid--{{ gridImage.items|length }}-items">
+        {% for item in gridImage.items %}
+          <div class="grid-image__item">{{ item }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="grid-image__navigation hidden-on-tablet text--center">
+      <div class="block-slider-navigation js-block-slider-navigation">
+        <a href="#" class="prev left slick-arrow">
+          <span>Prev</span>
+        </a>
+        <div class="slide-count-wrap js-slide-count-wrap">
+          <span class="number-active">1</span>of<span class="total">{{ totalSlides }}</span>
+        </div>
+        <a href="#" class="next left slick-arrow">
+          <span>Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
