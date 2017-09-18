@@ -1,0 +1,107 @@
+{
+  "gridTiles": {
+    "bgColor": "bg--brown text--white",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-grid-tiles-item",
+          "with": {
+            "gridTilesItem": {
+              "title": "Jack Heinz",
+              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-tiles-item",
+          "with": {
+            "gridTilesItem": {
+              "title": "Peter Balish",
+              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-tiles-item",
+          "with": {
+            "gridTilesItem": {
+              "title": "Greg Storey",
+              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-grid-tiles-item",
+          "with": {
+            "gridTilesItem": {
+              "title": "Naomi Grenson-Smith",
+              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
