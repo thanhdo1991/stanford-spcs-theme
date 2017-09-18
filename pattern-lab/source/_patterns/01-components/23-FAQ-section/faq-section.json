@@ -1,0 +1,156 @@
+{
+  "faqSection": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-faq-section-item",
+          "with": {
+            "faqSectionItem": {
+              "bgColor": "bg--light-sandstone text--dark",
+              "title": "Most popular questions in General Information",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Donec facilisis tortor ut augue lacinia, at viverra est semper?",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque? ",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis integer ac enim pellentesque, adipiscing metus id, pharetra odio?",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faq-section-item",
+          "with": {
+            "faqSectionItem": {
+              "bgColor": "bg--white text--dark",
+              "title": "Cras quis nulla",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Donec facilisis tortor ut augue lacinia, at viverra est semper?",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque? ",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis integer ac enim pellentesque, adipiscing metus id, pharetra odio?",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-faq-section-item",
+          "with": {
+            "faqSectionItem": {
+              "bgColor": "bg--white text--dark",
+              "title": "Lorem ipsum dol",
+              "items": [
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Donec facilisis tortor ut augue lacinia, at viverra est semper?",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque? ",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "components-faq-accordion",
+                    "with": {
+                      "blockFaqItem": {
+                        "question": "Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis integer ac enim pellentesque, adipiscing metus id, pharetra odio?",
+                        "answer": "The digital humanities are those pursuits which use computers, software, digital tools in general, to explore topics of humanistic inquiry. In order to have a more nuanced understanding of the digital humanities, students will be exposed to a number of its practices, and practitioners. Topics will include history of the digital humanities, textual studies, electronic literature, computational and new media, and emerging work around text, image, and new media curation and visualization. This course is organized as a mix of seminar and workshop and will be featuring a new platform, Lacuna, designed by a digital humanities team at Stanford. Lacuna Studies will also serve as a case study for examples of digital humanities projects. This class will also have a practical, hands-on element where students can try out the technologies and interfaces for humanistic inquiry."
+                      }
+                    },
+                    "only": true
+                  }
+                }
+              ]
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

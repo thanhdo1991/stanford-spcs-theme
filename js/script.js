@@ -6,6 +6,50 @@
     mobileLandscape = "(min-width:30em)", // 480px.
     tablet = "(min-width:48em)"; // 768px.
   // Add  functionality here.
+  // Show hidden function.
+  var showHiddenFunction = function (btn, flag, clickOutside, dropDown, childSelector) {
+    var $btn = btn,
+        $parent = $btn.parent(),
+        $childSelector = childSelector;
+    dropDown = dropDown === true ? true : false;
+    clickOutside = clickOutside === false ? false : true;
+    $btn.on('click', function (e) {
+      e.preventDefault();
+      if (!$parent.hasClass(flag)) {
+        $parent.addClass(flag);
+        if (dropDown === true) {
+          $childSelector.slideDown("slow");
+        }
+      }
+      else {
+        $parent.removeClass(flag);
+        if (dropDown === true) {
+          $childSelector.slideUp("slow");
+        }
+      }
+    });
+    if (clickOutside === true) {
+      $(document).on('click', function (e) {
+        if ($parent.has(e.target).length === 0 && $parent.hasClass(flag)) {
+          $parent.removeClass(flag);
+          if (dropDown === true) {
+            $childSelector.slideUp("slow");
+          }
+        }
+      });
+    }
+  };
+
+  var faqAccordionFlag = "show-faq",
+      $jsFaqAccordion= $('.js-faq-accordion');
+
+  $jsFaqAccordion.each(function(index, el) {
+    console.log('ok');
+    var $this = $(this),
+        $question = $('.faq-accordion__question', $this),
+        $answer = $('.faq-accordion__answer', $this);
+    showHiddenFunction($question, faqAccordionFlag, false, true, $answer);
+  });
 
   // js-play-video
   var $jsPlayVideo = $('.js-play-video'),
