@@ -1,0 +1,10 @@
+<div class="faq-accordion js-faq-accordion">
+  <h5 class="faq-accordion__question">
+    {{ blockFaqItem.question }}
+    <span class="faq-accordion__btn link">
+      <span class="faq-accordion__btn__show"><i class="icon-arrow-downward"></i>{{ 'Show'|t }}</span>
+      <span class="faq-accordion__btn__hide"><i class="icon-arrow-upward"></i>{{ 'Hide'|t }}</span>
+    </span>
+  </h5>
+  <div class="faq-accordion__answer typography-space-small">{{ blockFaqItem.answer }}</div>
+</div>

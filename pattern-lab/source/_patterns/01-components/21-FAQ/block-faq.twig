@@ -1,0 +1,8 @@
+<div class="block-faq">
+  <h3 class="block-faq__title">{{ blockFaq.title }}</h3>
+  <div class="block-faq__accordion">
+    {% for item in blockFaq.items %}
+      {{ item }}
+    {% endfor %}
+  </div>
+</div>

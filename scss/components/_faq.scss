@@ -1,0 +1,56 @@
+.faq-accordion {
+  border-bottom: rem(1px) solid $cadet-blue;
+  position: relative;
+
+  &__btn {
+    display: block;
+    font-size: rem(16px);
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(60px);
+
+    &__hide {
+      display: none;
+
+      .show-faq & {
+        display: block;
+      }
+    }
+
+    &__show {
+     .show-faq & {
+        display: none;
+     }
+    }
+
+    i {
+      position: relative;
+      top: rem(2px);
+    }
+  }
+
+  &__question {
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: rem(15px);
+    margin-top: rem(15px);
+    padding-right: rem(65px);
+    position: relative;
+  }
+
+  &__answer {
+    display: none;
+    margin-bottom: rem(15px);
+  }
+}
+
+.block-faq {
+  &__title {
+    @include susy-media(tablet) {
+      margin-bottom: rem(38px);
+    }
+  }
+}

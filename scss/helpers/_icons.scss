@@ -20,6 +20,14 @@
   }
 }
 
+.icon-arrow-upward:before {
+  content: '\e908';
+}
+
+.icon-arrow-downward:before {
+  content: '\e909';
+}
+
 .icon-sun:before {
   content: '\e906';
 }
@@ -69,22 +77,22 @@
 }
 
 .ico-check2:before {
-  content: "\e905";
+  content: '\e905';
 }
 
 .ico-close:before {
-  content: "\e903";
+  content: '\e903';
 }
 
 .ico-icon-right:before {
-  content: "\e901";
+  content: '\e901';
 }
 
 .ico-icon-left:before {
-  content: "\e902";
+  content: '\e902';
 }
 
 .ico-cogs:before {
-  content: "\e900";
+  content: '\e900';
 }
 
