@@ -182,3 +182,9 @@
     }
   }
 }
+
+.hidden-on-tablet {
+  @include susy-media(tablet) {
+    display: none !important;
+  }
+}
