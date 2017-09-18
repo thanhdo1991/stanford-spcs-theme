@@ -1,0 +1,12 @@
+<div class="box-icon {{ boxIcon.bgColor }}">
+  <div class="container">
+    {% if boxIcon.title is not empty %}
+      <h3 class="box-icon__big-title text--center">{{ boxIcon.title|raw }}</h3>
+    {% endif %}
+    <div class="box-icon__grid">
+      {% for item in boxIcon.items %}
+        <div class="box-icon__grid__item bg--white text--center text--dark">{{ item }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
