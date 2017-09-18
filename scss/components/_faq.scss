@@ -35,8 +35,8 @@
   &__question {
     cursor: pointer;
     font-weight: 600;
-    margin-bottom: rem(15px);
-    margin-top: rem(15px);
+    padding: rem(15px) 0;
+    margin: 0;
     padding-right: rem(65px);
     position: relative;
   }
@@ -51,6 +51,35 @@
   &__title {
     @include susy-media(tablet) {
       margin-bottom: rem(38px);
+    }
+  }
+}
+
+.faq-section {
+  &__item {
+    padding: rem(25px) 0 rem(30px);
+
+    @include susy-media(tablet) {
+      padding: rem(45px) 0 rem(49px);
+    }
+  }
+
+  &__title {
+    @include susy-media(tablet) {
+      @include span(4 of $susy-desktop no-gutters);
+      margin-bottom: 0;
+      padding-right: rem(50px);
+    }
+
+    .text--dark & {
+      color: $primary-color;
+    }
+  }
+
+  &__accordion {
+    @include susy-media(tablet) {
+      @include span(8 of $susy-desktop wide last);
+      margin-top: rem(-12px);
     }
   }
 }

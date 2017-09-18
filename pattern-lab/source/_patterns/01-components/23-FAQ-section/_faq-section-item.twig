@@ -1,0 +1,10 @@
+<div class="faq-section__item {{ faqSectionItem.bgColor }}">
+  <div class="container">
+    <h4 class="faq-section__title">{{ faqSectionItem.title }}</h4>
+    <div class="faq-section__accordion">
+      {% for item in faqSectionItem.items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+  </div>
+</div>
