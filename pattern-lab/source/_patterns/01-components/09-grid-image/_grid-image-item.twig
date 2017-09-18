@@ -1,0 +1,8 @@
+{% if gridImageItem.image or gridImageItem.link %}
+  {% if gridImageItem.link %}
+    <span class="grid-image__link-item">{{ gridImageItem.link }}</span>
+  {% endif %}
+  {% if gridImageItem.image %}
+    <div class="grid-image__image-item">{{ gridImageItem.image }}</div>
+  {% endif %}
+{% endif %}

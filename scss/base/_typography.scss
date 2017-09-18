@@ -98,6 +98,15 @@ p {
   &--semibold {
     font-weight: 600;
   }
+
+  &--white {
+    color: $white;
+
+    &:active,
+    &:hover {
+      color: darken($white, 10%);
+    }
+  }
 }
 
 a {

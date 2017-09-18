@@ -121,6 +121,49 @@
   }
 }
 
+.list-border-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(30px);
+  }
+
+  li {
+    margin-bottom: rem(32px);
+
+    @include susy-media(tablet) {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: rem(0px 21px 0 23px);
+      position: relative;
+
+      &:before {
+        background-color: $silver;
+        content: '';
+        height: rem(18px);
+        left: 0;
+        position: absolute;
+        top: rem(7px);
+        width: rem(2px);
+      }
+    }
+
+    &:first-of-type {
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  a {
+    @extend %link--white;
+    border-bottom: rem(1px) solid currentColor;
+    text-transform: capitalize;
+  }
+}
+
 .element-invisible {
   @extend %invisible;
 }
@@ -185,5 +228,11 @@
     iframe {
       opacity: 1;
     }
+  }
+}
+
+.hidden-on-tablet {
+  @include susy-media(tablet) {
+    display: none !important;
   }
 }

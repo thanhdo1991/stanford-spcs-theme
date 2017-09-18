@@ -32,6 +32,7 @@
 // Vendors
 @import 'vendors/chosen';
 @import 'vendors/panel-switch';
+@import 'vendors/slick';
 
 // Components
 @import 'components/hero-banner';
@@ -44,6 +45,9 @@
 @import 'components/block-bio';
 @import 'components/grid-tiles';
 @import 'components/faq';
+@import 'components/grid-image';
+@import 'components/pager-slider';
+@import 'components/navigation-list';
 
 // Layouts
 @import 'layouts/layout';
