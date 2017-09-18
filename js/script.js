@@ -38,4 +38,50 @@
     }
   };
 
+  var $jsGridImage = $('.js-grid-image'),
+      $gridImageGrid = $('.grid-image__grid', $jsGridImage),
+      $gridImageBtnPrev = $('.js-block-slider-navigation .prev', $jsGridImage),
+      $gridImageBtnNext = $('.js-block-slider-navigation .next', $jsGridImage),
+      gridImageConfig = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        adaptiveHeight: true,
+        prevArrow: "<a href='#' class='slick-prev invisible'>Prev</a>",
+        nextArrow: "<a href='#' class='slick-next invisible'>Next</a>",
+      };
+  enquire.register(mobileOnly, {
+    match: function () {
+      $gridImageGrid.not('.slick-initialized').slick(gridImageConfig).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        var $parent = $(this).closest('.js-grid-image'),
+            $numberActive = $('.js-block-slider-navigation .number-active', $parent),
+            numberActive = nextSlide + 1;
+        $numberActive.text(numberActive);
+      });
+
+      $gridImageBtnPrev.click(function(e) {
+        e.preventDefault();
+        var $parent = $(this).closest('.js-grid-image'),
+            $caurosel = $('.grid-image__grid', $parent);
+        $caurosel.slick('slickPrev');
+      });
+
+      $gridImageBtnNext.click(function(e) {
+        e.preventDefault();
+        var $parent = $(this).closest('.js-grid-image'),
+            $caurosel = $('.grid-image__grid', $parent);
+        $caurosel.slick('slickNext');
+      });
+    },
+    unmatch: function () {
+      if($gridImageGrid.hasClass('slick-initialized')) {
+        $gridImageGrid.slick("unslick");
+
+        $gridImageBtnPrev.off("click");
+        $gridImageBtnNext.off("click");
+      }
+    },
+  });
+
 }(this, this.document, this.jQuery));
