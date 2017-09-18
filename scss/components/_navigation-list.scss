@@ -1,5 +1,5 @@
 .navigation-list {
-  @include gradient-overlay($black, .2);
+  background-color: $silver;
   overflow: hidden;
   position: relative;
 
@@ -31,38 +31,44 @@
     }
   }
 
-  &__inner {
-    display: table-cell;
-    vertical-align: bottom;
-    width: calc(100% - #{rem(1px)});
-  }
-
   &__content {
-    display: table;
-    position: relative;
-    table-layout: fixed;
-    width: 100%;
-    z-index: 1;
-
-    @include susy-media(tablet) {
-      height: rem(400px);
-    }
-
-    &:before {
-      @include susy-media(mobileOnly) {
-        content: '';
-        display: table-cell;
-        height: rem(500px);
-        width: rem(1px);
-      }
-    }
-
     .container {
       padding: rem(10px 0);
 
       @include susy-media(tablet) {
         padding: rem(49px 0);
       }
+    }
+  }
+
+  &.has-image {
+    @include gradient-overlay($black, .2);
+
+    .navigation-list__content {
+      display: table;
+      position: relative;
+      table-layout: fixed;
+      width: 100%;
+      z-index: 1;
+
+      @include susy-media(tablet) {
+        height: rem(400px);
+      }
+
+      &:before {
+        @include susy-media(mobileOnly) {
+          content: '';
+          display: table-cell;
+          height: rem(500px);
+          width: rem(1px);
+        }
+      }
+    }
+
+    .navigation-list__inner {
+      display: table-cell;
+      vertical-align: bottom;
+      width: calc(100% - #{rem(1px)});
     }
   }
 }
