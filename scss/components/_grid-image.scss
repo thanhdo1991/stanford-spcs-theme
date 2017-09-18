@@ -16,15 +16,15 @@ $marginRight: 6px;
   }
 
   &__title {
-    margin-bottom: 32px;
     @include pad(5%);
+    margin-bottom: rem(32px);
 
     @include susy-media(tablet) {
-      margin-bottom: 35px;
+      margin-bottom: rem(35px);
     }
 
     @include susy-media(desktopWide) {
-      margin-bottom: 45px;
+      margin-bottom: rem(45px);
     }
   }
 
@@ -71,8 +71,8 @@ $marginRight: 6px;
 
   &__grid {
     @extend %clearfix;
+    margin-bottom: rem(15px);
     overflow: hidden;
-    margin-bottom: 15px;
 
     @include susy-media(tablet) {
       .grid-image__item {
@@ -97,11 +97,6 @@ $marginRight: 6px;
         &:nth-child(5n + 3),
         &:nth-child(5n + 2) {
           padding-bottom: 16.88%;
-        }
-
-        &:nth-child(8n + 5),
-        &:nth-child(8n + 4) {
-
         }
 
         &:nth-child(5n + 3),
