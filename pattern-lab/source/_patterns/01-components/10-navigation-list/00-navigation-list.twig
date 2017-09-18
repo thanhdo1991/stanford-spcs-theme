@@ -1,0 +1,29 @@
+{% set classes = '' %}
+{% if navigationList.image %}
+  {% set classes = 'has-image' %}
+{% endif %}
+
+<div class="navigation-list {{ classes }} text--center text--white">
+  {% if navigationList.image %}
+    <div class="navigation-list__image">{{ navigationList.image }}</div>
+  {% endif %}
+  {% if navigationList.label or navigationList.utilityLinks %}
+    <div class="navigation-list__content">
+      <div class="navigation-list__inner">
+        <div class="container">
+        {% if navigationList.label %}
+          <h1 class="navigation-list__label">{{ navigationList.label }}</h1>
+        {% endif %}
+
+        {% if navigationList.utilityLinks|length > 0 %}
+          <ul class="list-border-inline">
+            {% for item in navigationList.utilityLinks %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
