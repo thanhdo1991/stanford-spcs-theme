@@ -1,0 +1,72 @@
+.cta {
+  &__inner {
+    align-content: stretch;
+    align-items: flex-start;
+    border-bottom: rem(5px) solid $primary-color;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: rem(25px 20px 23px);
+    transform: translateY(rem(14px));
+
+    @include susy-media(tablet) {
+      align-items: center;
+      flex-flow: row nowrap;
+      padding: rem(34px 20px 33px);
+      transform: translateY(rem(20px));
+    }
+  }
+
+  &__title {
+    border-bottom: rem(2px) solid $silver;
+    margin-bottom: rem(13px);
+    padding-bottom: rem(13px);
+
+    @include susy-media(tablet) {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-right: rem(29px);
+      text-align: right;
+      width: 45%;
+    }
+
+    @include susy-media(desktop) {
+      width: 35.3%;
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(3px);
+    }
+  }
+
+  &__group {
+    position: relative;
+
+    @include susy-media(tablet) {
+      padding-left: rem(32px);
+      width: 55%;
+    }
+
+    @include susy-media(desktop) {
+      width: 64.7%;
+    }
+
+    &:before {
+      @include susy-media(tablet) {
+        background-color: $silver;
+        content: '';
+        height: rem(42px);
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: rem(2px);
+      }
+    }
+  }
+}

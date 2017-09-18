@@ -1,0 +1,294 @@
+{
+  "blockBio": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "title": "Meet our team",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Michael Howell",
+              "body": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper</p><p>Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Marshall Johnston",
+              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Francis Farmer",
+              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Betty Grzymala-Busse",
+              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Marshall Johnston",
+              "body": "<p>Curabitur lobortis id lorem id bibendum</p><p>Id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibu.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Francis Farmer",
+              "body": "<p>Donec facilisis tortor</p><p>Ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-bio-item",
+          "with": {
+            "blockBioItem": {
+              "image": {
+                "include()": {
+                  "pattern": "base-elements-picture",
+                  "with": {
+                    "picture": {
+                      "srcDesktop": "",
+                      "srcTablet": "//unsplash.it/308/188",
+                      "src": "//unsplash.it/352/280",
+                      "alt": "SPCS picture"
+                    },
+                    "only": true
+                  }
+                }
+              },
+              "title": "Betty Grzymala-Busse",
+              "body": "<p>Nam porttitor blandit accumsan</p><p>Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum.</p>",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ],
+    "buttonLink": {
+      "include()": {
+        "pattern": "base-elements-link",
+        "with": {
+          "link": {
+            "class": "btn",
+            "href": "#",
+            "text": "See all instructors"
+          },
+          "only": true
+        }
+      }
+    }
+  }
+}

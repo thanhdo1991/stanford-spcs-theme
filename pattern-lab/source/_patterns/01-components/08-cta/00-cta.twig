@@ -1,0 +1,19 @@
+<div class="cta bg--primary-color text--white">
+  <div class="cta__inner container bg--white text--dark">
+    {% if cta.title %}
+      <h3 class="cta__title">{{ cta.title }}</h3>
+    {% endif %}
+
+    {% if cta.description or cta.link %}
+      <div class="cta__group">
+        {% if cta.description %}
+          <div class="cta__description">{{ cta.description }}</div>
+        {% endif %}
+
+        {% if cta.link %}
+          <div class="cta__link">{{ cta.link }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
