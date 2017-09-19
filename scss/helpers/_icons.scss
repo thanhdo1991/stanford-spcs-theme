@@ -20,8 +20,16 @@
   }
 }
 
+.icon-arrow-upward:before {
+  content: '\e908';
+}
+
+.icon-arrow-downward:before {
+  content: '\e909';
+}
+
 .icon-arrow-right:before {
-  content: "\e907";
+  content: '\e907';
 }
 
 .icon-sun:before {

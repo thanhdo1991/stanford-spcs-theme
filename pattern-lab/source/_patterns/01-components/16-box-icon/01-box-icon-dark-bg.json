@@ -1,0 +1,233 @@
+{
+  "boxIcon": {
+    "bgColor": "bg--clay text--white",
+    "title": "Courses by category",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-sun",
+              "title": "Interdisciplinary Sciences",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "Writing and Humanities",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-dpx-wrap-text-around",
+              "title": "Social Science",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "Physical and Earth Science",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-sun",
+              "title": "Business",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "BioScience",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-dpx-wrap-text-around",
+              "title": "Computer Science",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "Mathematics",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-box-icon-item",
+          "with": {
+            "boxIconItem": {
+              "icon": "icon-global-customers",
+              "title": "Enineering",
+              "link": {
+                "include()": {
+                  "pattern": "base-elements-link",
+                  "with": {
+                    "link": {
+                      "class": "",
+                      "href": "#",
+                      "text": "link"
+                    },
+                    "only": true
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

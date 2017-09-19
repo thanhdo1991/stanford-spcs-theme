@@ -4,6 +4,64 @@
     {
       "icon": {
         "paths": [
+          "M170 512l342-342 342 342-62 60-238-238v520h-84v-520l-240 238z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "arrow-upward"
+        ],
+        "grid": 32
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 50,
+        "id": 9,
+        "prevSize": 16,
+        "code": 59656,
+        "name": "arrow-upward"
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M854 512l-342 342-342-342 62-60 238 238v-520h84v520l240-238z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "arrow-downward"
+        ],
+        "grid": 32
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 51,
+        "id": 10,
+        "name": "arrow-downward",
+        "prevSize": 16,
+        "code": 59657
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
           "M841.143 548.571c0 19.429-7.429 38.286-21.143 52l-372 372c-13.714 13.143-32.571 21.143-52 21.143s-37.714-8-51.429-21.143l-42.857-42.857c-13.714-13.714-21.714-32.571-21.714-52s8-38.286 21.714-52l167.429-167.429h-402.286c-41.143 0-66.857-34.286-66.857-73.143v-73.143c0-38.857 25.714-73.143 66.857-73.143h402.286l-167.429-168c-13.714-13.143-21.714-32-21.714-51.429s8-38.286 21.714-51.429l42.857-42.857c13.714-13.714 32-21.714 51.429-21.714s38.286 8 52 21.714l372 372c13.714 13.143 21.143 32 21.143 51.429z"
         ],
         "attrs": [
@@ -21,15 +79,15 @@
         {}
       ],
       "properties": {
-        "order": 40,
+        "order": 52,
         "id": 8,
-        "prevSize": 28,
+        "prevSize": 16,
         "name": "arrow-right",
         "code": 59655
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 0
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -51,15 +109,15 @@
         {}
       ],
       "properties": {
-        "order": 41,
+        "order": 53,
         "id": 6,
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59654,
         "name": "sun"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 1
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -87,15 +145,15 @@
         {}
       ],
       "properties": {
-        "order": 42,
+        "order": 54,
         "id": 2,
         "name": "version",
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59650
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 2
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -134,15 +192,15 @@
         {}
       ],
       "properties": {
-        "order": 43,
+        "order": 55,
         "id": 3,
         "name": "dpx-wrap-text-around",
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59651
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 3
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -173,15 +231,15 @@
         {}
       ],
       "properties": {
-        "order": 44,
+        "order": 56,
         "id": 4,
         "name": "replicate",
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59652
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 4
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -205,15 +263,15 @@
         {}
       ],
       "properties": {
-        "order": 45,
+        "order": 57,
         "id": 5,
         "name": "global-customers",
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59653
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 5
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -235,15 +293,15 @@
         {}
       ],
       "properties": {
-        "order": 46,
+        "order": 58,
         "id": 1,
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59649,
         "name": "triangle-down"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 6
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -264,15 +322,15 @@
         {}
       ],
       "properties": {
-        "order": 47,
+        "order": 59,
         "id": 0,
-        "prevSize": 28,
+        "prevSize": 16,
         "code": 59648,
         "name": "check"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 7
+      "iconIdx": 9
     }
   ],
   "height": 1024,

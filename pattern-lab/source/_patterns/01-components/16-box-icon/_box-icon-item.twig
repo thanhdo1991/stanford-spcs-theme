@@ -1,0 +1,9 @@
+{% if boxIconItem.icon is not empty %}
+  <span class="box-icon__icon {{ boxIconItem.icon }}"></span>
+{% endif %}
+{% if boxIconItem.title is not empty %}
+  <h5 class="box-icon__title">{{ boxIconItem.title }}</h5>
+{% endif %}
+{% if boxIconItem.link is not empty %}
+  <div class="box-icon__link-hover">{{ boxIconItem.link }}</div>
+{% endif %}
