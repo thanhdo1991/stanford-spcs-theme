@@ -1,0 +1,43 @@
+{
+  "textColumns": {
+    "bgColor": "bg--light-sandstone text--dark",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Curabitur lobortis id lorem id bibe",
+              "body": "<p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Fusce vehicula dolor arcu sit amet",
+              "body": "<p>Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.Curabitur lobortis id lorem id bibendum. Ut id.</p>"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Curabitur lobortis id lorem id bibe",
+              "body": "<p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
