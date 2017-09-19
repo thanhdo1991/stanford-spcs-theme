@@ -1,0 +1,21 @@
+{
+  "imageFeature": {
+    "title": "2018 Courses",
+    "subtitle" : "",
+    "image": {
+      "include()": {
+        "pattern": "base-elements-picture",
+        "with": {
+          "picture": {
+            "srcDesktop": "//unsplash.it/1440/450",
+            "srcTablet": "//unsplash.it/1024/320",
+            "src": "//unsplash.it/768/344",
+            "alt": "SPCS picture"
+          },
+          "only": true
+        }
+      }
+    },
+    "description": "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut."
+  }
+}

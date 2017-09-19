@@ -1,0 +1,53 @@
+.image-feature {
+  padding: rem(20px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(35px 0);
+  }
+
+  @include susy-media(desktopWide) {
+    padding: rem(50px 0);
+  }
+
+  &__title {
+    margin-bottom: rem(25px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(30px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: rem(42px);
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(55px);
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    margin-bottom: rem(44px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(35px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(50px);
+    }
+
+    img {
+      border-bottom: rem(10px) solid $secondary-color;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(15px);
+  }
+}

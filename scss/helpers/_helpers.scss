@@ -236,3 +236,13 @@
     display: none !important;
   }
 }
+
+.padding-two-sides {
+  @include susy-media(tablet) {
+    @include pad(span(1 of $susy-tablet));
+  }
+
+  @include susy-media(desktop) {
+    @include pad(span(2 of $susy-desktop));
+  }
+}
