@@ -1,0 +1,103 @@
+{
+  "blockStats": {
+    "title": "Highlights",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "2001",
+              "title": "founded"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "16",
+              "title": "average class size"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "1200",
+              "title": "participants"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "1400",
+              "title": "founded"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "600",
+              "title": "average class size"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "1900",
+              "title": "participants"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "2060",
+              "title": "founded"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "components-block-stats-item",
+          "with": {
+            "blockStatsItem": {
+              "number": "690",
+              "title": "average class size"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

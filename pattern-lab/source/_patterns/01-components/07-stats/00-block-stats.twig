@@ -1,0 +1,17 @@
+<div class="block-stats">
+  <div class="container">
+    {% if blockStats.title is not empty %}
+      <h1 class="block-stats__big-title text--center">{{ blockStats.title|raw }}</h1>
+    {% endif %}
+    <div class="block-stats__inner">
+      {% if blockMedia.title is not empty %}
+        <h1 class="block-stats__big-title">{{ blockStats.title }}</h1>
+      {% endif %}
+      <div class="block-stats__list">
+        {% for item in blockStats.items %}
+          <div class="block-stats__item text--center">{{ item }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

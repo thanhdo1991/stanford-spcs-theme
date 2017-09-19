@@ -1,0 +1,8 @@
+<div class="block-stats__group">
+  {% if blockStatsItem.number is not empty %}
+    <h1 class="block-stats__counter js-stats-counter">{{ blockStatsItem.number }}</h1>
+  {% endif %}
+  {% if blockStatsItem.title is not empty %}
+    <div class="block-stats__title">{{ blockStatsItem.title }}</div>
+  {% endif %}
+</div>
