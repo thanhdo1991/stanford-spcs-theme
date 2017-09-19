@@ -1,10 +1,15 @@
 <div class="image-feature text--center">
   <div class="container">
     <h1 class="image-feature__title padding-two-sides">{{ imageFeature.title }}</h1>
+
     {% if imageFeature.subtitle %}
       <div class="image-feature__subtitle padding-two-sides">{{ imageFeature.subtitle }}</div>
     {% endif %}
-    <div class="image-feature__image">{{ imageFeature.image }}</div>
+
+    {% if imageFeature.image %}
+      <div class="image-feature__image">{{ imageFeature.image }}</div>
+    {% endif %}
+
     {% if imageFeature.description %}
       <div class="image-feature__description padding-two-sides">{{ imageFeature.description }}</div>
     {% endif %}
