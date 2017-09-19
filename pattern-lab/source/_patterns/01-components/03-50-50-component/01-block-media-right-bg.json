@@ -1,0 +1,51 @@
+{
+  "blockMedia": {
+    "mediaAlign": "media-right",
+    "title": "Find yourself at Stanford",
+    "media": {
+      "include()": {
+        "pattern": "base-elements-video",
+        "with": {
+          "video": {
+            "videoItem": {
+              "include()": {
+                "pattern": "base-elements-youtube-embed",
+                "with": {
+                  "youtubeEmbed": {
+                    "id": "5gQDT24fuFU",
+                    "width": "960",
+                    "height": "540",
+                    "allowfullscreen": "allowfullscreen",
+                    "loop": "1",
+                    "autoplay": "0",
+                    "start": "0",
+                    "rel": "0"
+                  }
+                }
+              }
+            },
+            "image": {
+              "include()": {
+                "pattern": "base-elements-image",
+                "with": {
+                  "image": {
+                    "src": "//unsplash.it/960/540/",
+                    "alt": "spcs image",
+                    "width": "960",
+                    "height": "540"
+                  }
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    },
+    "textContent": {
+      "bgColor": "bg--clay text--white",
+      "title": "Fusce vehicula dolor arcu,  amet blandit dolor mollis.",
+      "description" : "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.Pellentesque non dignissim neque."
+    }
+  }
+}
