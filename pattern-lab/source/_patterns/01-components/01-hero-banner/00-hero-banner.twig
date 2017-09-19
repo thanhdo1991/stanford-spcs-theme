@@ -12,10 +12,10 @@
     <div class="container">
       <div class="hero-banner__content text--center {{ heroBanner.bgColor }}">
         {% if heroBanner.title is not empty %}
-          <h1 class="page-heading__title">{{ heroBanner.title|raw }}</h1>
+          <h1 class="hero-banner__title">{{ heroBanner.title|raw }}</h1>
         {% endif %}
         {% if heroBanner.subtitle is not empty %}
-          <div class="page-heading__subtitle">{{ heroBanner.subtitle }}</div>
+          <div class="hero-banner__subtitle">{{ heroBanner.subtitle }}</div>
         {% endif %}
       </div>
     </div>

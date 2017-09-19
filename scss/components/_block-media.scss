@@ -1,0 +1,54 @@
+.block-media {
+  padding: rem(40px) 0;
+
+  @include susy-media(tablet) {
+    padding: rem(90px) 0;
+  }
+
+  &__big-title {
+    margin-bottom: rem(35px);
+  }
+
+  &__title {
+    margin-bottom: rem(20px);
+  }
+
+  &__group {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: flex-start;
+  }
+
+  &__media {
+    width: 100%;
+
+    @include susy-media(tablet) {
+      width: span(7 of $susy-desktop no-gutters);
+    }
+
+    .video-wrap  {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    margin: rem(-20px) rem(-$container-margin) 0;
+    padding: rem(30px);
+    padding: rem(53px $container-margin 44px);
+
+    @include susy-media(tablet) {
+      margin: 0;
+      padding: rem(30px);
+      width: span(5 of $susy-desktop wide);
+    }
+  }
+
+  &.media-right {
+    .block-media {
+      &__group {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

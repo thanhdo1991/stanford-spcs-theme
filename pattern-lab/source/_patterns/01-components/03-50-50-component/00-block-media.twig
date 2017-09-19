@@ -1,0 +1,18 @@
+<div class="block-media {{ blockMedia.mediaAlign }}">
+  <div class="container">
+    {% if blockMedia.title is not empty %}
+      <h1 class="block-media__big-title text--center">{{ blockMedia.title|raw }}</h1>
+    {% endif %}
+    <div class="block-media__group">
+      {% if blockMedia.media is not empty %}
+        <div class="block-media__media">{{ blockMedia.media }}</div>
+      {% endif %}
+      {% if blockMedia.textContent.title is not empty or blockMedia.textContent.description is not empty %}
+        <div class="block-media__content {{ blockMedia.textContent.bgColor }}">
+          <h3 class="page-heading__title">{{ blockMedia.textContent.title|raw }}</h3>
+          <div class="page-heading__description">{{ blockMedia.textContent.description }}</div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
