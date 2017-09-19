@@ -1,5 +1,5 @@
 .image-feature {
-  padding: rem(20px 0);
+  padding: rem(20px 0 10px);
 
   @include susy-media(tablet) {
     padding: rem(35px 0);
@@ -31,15 +31,7 @@
 
   &__image {
     line-height: 0;
-    margin-bottom: rem(44px);
-
-    @include susy-media(tablet) {
-      margin-bottom: rem(35px);
-    }
-
-    @include susy-media(desktopWide) {
-      margin-bottom: rem(50px);
-    }
+    margin-bottom: rem(15px);
 
     img {
       border-bottom: rem(10px) solid $secondary-color;
@@ -48,6 +40,15 @@
   }
 
   &__description {
+    padding-top: rem(29px);
     margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      padding-top: rem(20px);
+    }
+
+    @include susy-media(desktopWide) {
+      padding-top: rem(35px);
+    }
   }
 }

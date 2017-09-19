@@ -1,0 +1,11 @@
+<div class="text-columns {{ textColumns.bgColor }}">
+  <div class="container">
+    {% if textColumns.items|length > 0 %}
+      <div class="text-columns__grid text-columns__grid--{{ textColumns.items|length }}-items">
+        {% for item in textColumns.items %}
+          <div class="text-columns__item">{{ item }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

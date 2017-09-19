@@ -1,0 +1,19 @@
+{
+  "textColumns": {
+    "bgColor": "bg--white text--dark",
+    "items": [
+      {
+        "include()": {
+          "pattern": "components-text-columns-item",
+          "with": {
+            "textColumnsItem": {
+              "title": "Curabitur lobortis id lorem id bibe",
+              "body": "<p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}
