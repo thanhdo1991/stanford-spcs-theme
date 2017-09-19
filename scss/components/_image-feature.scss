@@ -1,4 +1,5 @@
 .image-feature {
+  $root: &;
   padding: rem(20px 0 10px);
 
   @include susy-media(tablet) {
@@ -18,6 +19,10 @@
 
     @include susy-media(desktopWide) {
       margin-bottom: rem(40px);
+    }
+
+    + #{$root}__description {
+      padding-top: 0;
     }
   }
 
