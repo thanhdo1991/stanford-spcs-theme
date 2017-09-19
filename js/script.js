@@ -40,15 +40,18 @@
     }
   };
 
-  var faqAccordionFlag = "show-faq",
+  var faqAccordionFlag = 'show-faq',
       $jsFaqAccordion= $('.js-faq-accordion');
-
   $jsFaqAccordion.each(function(index, el) {
-    console.log('ok');
     var $this = $(this),
         $question = $('.faq-accordion__question', $this),
         $answer = $('.faq-accordion__answer', $this);
     showHiddenFunction($question, faqAccordionFlag, false, true, $answer);
+  });
+
+  $('.js-stats-counter').counterUp({
+    delay: 10,
+    time: 1000
   });
 
   // js-play-video
