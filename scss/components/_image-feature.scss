@@ -40,8 +40,8 @@
   }
 
   &__description {
-    padding-top: rem(29px);
     margin-bottom: rem(15px);
+    padding-top: rem(29px);
 
     @include susy-media(tablet) {
       padding-top: rem(20px);
