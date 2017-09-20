@@ -1,0 +1,20 @@
+{
+  "pageclass" : "",
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-hero-banner"
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  }
+}
