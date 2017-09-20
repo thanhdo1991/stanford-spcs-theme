@@ -20,7 +20,7 @@ $pull-block-hero: 20px;
 
   &__content-wrap {
     border-top: rem(10px) solid $sub-color;
-    position: relative;
+    // position: relative;
 
     @include susy-media(mobileOnly) {
       order: 0;
@@ -58,6 +58,7 @@ $pull-block-hero: 20px;
         line-height: 0;
         overflow: hidden;
         position: relative;
+        width: 100%;
 
         @include susy-media(mobileOnly) {
           height: rem(398px);
@@ -92,14 +93,14 @@ $pull-block-hero: 20px;
       &__content {
         @include susy-media(tablet) {
           bottom: rem(-$pull-block-hero);
-          left: 50%;
+          left: 0;
           position: absolute;
-          transform: translateX(-50%);
           width: 100%;
         }
 
         @include susy-media(desktop) {
           width: span(8 of $susy-desktop);
+          left: span(2 of $susy-desktop wide);
         }
       }
     }

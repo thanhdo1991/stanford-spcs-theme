@@ -85,6 +85,17 @@
     }
   };
 
+  // Table responsive
+  Drupal.behaviors.tableResponsive = {
+    attach: function (context, settings) {
+      var $table = $('table', context);
+      if ($table.length &&
+        !$table.parent().hasClass('table-responsive')) {
+        $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
+      }
+    }
+  };
+
   var $jsGridImage = $('.js-grid-image'),
       $gridImageGrid = $('.grid-image__grid', $jsGridImage),
       $gridImageBtnPrev = $('.js-block-slider-navigation .prev', $jsGridImage),
