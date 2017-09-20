@@ -1,0 +1,29 @@
+{
+  "quickTab": {
+    "title": "Frequently asked questions",
+    "bgColor": "bg--clay text--white",
+    "alignContent": "text--left",
+    "items": [
+      {
+        "title": "General Information",
+        "content": "<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.</p>"
+      },
+      {
+        "title": "Admissions & Tuition",
+        "content": "<p>Facilisis donec tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.</p>"
+      },
+      {
+        "title": "Technical Questions",
+        "content": "<p>Tortor donec facilisis ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.</p>"
+      },
+      {
+        "title": "Student Life",
+        "content": "<p>Tortor facilisis donec ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut.</p>"
+      },
+      {
+        "title": "Admitted Students",
+        "content": "<p>Ut facilisis donec tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum.</p>"
+      }
+    ]
+  }
+}

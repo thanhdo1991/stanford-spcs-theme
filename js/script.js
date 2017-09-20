@@ -131,4 +131,49 @@
     },
   });
 
+  // Quick tab.
+  function showTabContent(el, index) {
+    var isInvisible = 'invisible',
+        $sectionsContent = el.closest('.quick-tab').find('.quick-tab__content');
+    $sectionsContent.addClass(isInvisible);
+    $sectionsContent.eq(index).removeClass(isInvisible);
+  };
+
+  var $quickTabList = $('.quick-tab__list'),
+      $quickTabSelect = $('.js-quick-tab__select', $quickTabList),
+      $quickTabItemLink = $('.js-quick-tab__item a', $quickTabList),
+      isActive = 'active';
+  $quickTabItemLink.on('click', function (e) {
+    if (e) {
+      e.preventDefault();
+    }
+
+    var $parent = $(this).closest('.quick-tab__item');
+    if (!$(this).hasClass(isActive)) {
+      var activeIndex = $parent.index(),
+          $quickTabItemCurrent = $(this).closest('.quick-tab__tabs').find('.quick-tab__item'),
+          $quickTabSelectCurrent = $(this).closest('.quick-tab__list').find('.quick-tab__select'),
+          quickTabOptionCurrentVal = $quickTabSelectCurrent.find('option').eq(activeIndex).val();
+
+      $quickTabItemCurrent.removeClass(isActive);
+      $parent.addClass(isActive);
+      $quickTabSelectCurrent.val(quickTabOptionCurrentVal);
+
+      if ($().chosen) {
+        $quickTabSelect.trigger("chosen:updated");
+      }
+
+      showTabContent($(this), activeIndex);
+    }
+  });
+
+  $quickTabSelect.change(function () {
+    var activeIndex = $(this).find('option:selected').index(),
+        $quickTabItemCurrent = $(this).closest('.quick-tab__list').find('.quick-tab__item');
+    $quickTabItemCurrent.removeClass(isActive);
+    $quickTabItemCurrent.eq(activeIndex).addClass(isActive);
+
+    showTabContent($(this), activeIndex);
+  });
+
 }(this, this.document, this.jQuery));
