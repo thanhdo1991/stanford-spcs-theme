@@ -6,19 +6,19 @@
       "items": [
         {
           "label": "bg--primary-color text--white",
-          "code": "#8c1515"
+          "code": ""
         },
         {
           "label": "bg--secondary-color text--white",
-          "code": "#b1040e"
+          "code": ""
         },
         {
           "label": "bg--sub-color text--white",
-          "code": "#00505c"
+          "code": ""
         },
         {
           "label": "bg--link-color text--white",
-          "code": "#006cb8"
+          "code": ""
         }
       ]
     },

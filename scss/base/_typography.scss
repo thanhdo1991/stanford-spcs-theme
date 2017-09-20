@@ -64,6 +64,8 @@ p {
 
 %typography-space-small,
 .typography-space-small {
+  ol,
+  ul,
   h1,
   h2,
   h3,
@@ -73,6 +75,33 @@ p {
   p {
     margin-bottom: rem(15px);
   }
+}
+
+%list,
+.list {
+  margin-bottom: rem(26px);
+  margin-left: rem(20px);
+  list-style-type: disc;
+
+  li {
+    padding-left: rem(5px);
+    margin-bottom: rem(5px);
+  }
+
+  &--number {
+    list-style-type: decimal;
+  }
+}
+
+.list-in-article {
+  ul {
+    @extend %list;
+  }
+}
+
+ol {
+  @extend %list;
+  @extend %list--number;
 }
 
 %link,

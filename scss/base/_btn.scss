@@ -1,6 +1,7 @@
 // Button
 .btn {
   @include SourceSansPro;
+  appearance: none;
   background-color: $secondary-color;
   background-image: none;
   border-color: $secondary-color;

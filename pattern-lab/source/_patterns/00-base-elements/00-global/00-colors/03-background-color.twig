@@ -8,6 +8,9 @@
         {% endif %}
         <span class="sg-swatch {{ item.label }}">{{ content|default("") }}</span>
         <span class="sg-label">Class: {{ item.label }}</span>
+        {% if item.code is not empty %}
+          <br/><span class="sg-label">Code: {{ item.code }}</span>
+        {% endif %}
       </li>
      {% endfor %}
   </ul>
