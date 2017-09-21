@@ -142,4 +142,11 @@
     },
   });
 
+  var $searchBox = $('.js-search-box'),
+      $searchBoxGroup = $('.js-search-box-group', $searchBox),
+      showClass = 'show-search-box';
+  $searchBoxGroup.on('click', function () {
+    $(this).closest('.js-search-box').toggleClass(showClass)
+  });
+
 }(this, this.document, this.jQuery));

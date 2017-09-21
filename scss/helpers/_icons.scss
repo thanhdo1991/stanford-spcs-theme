@@ -20,6 +20,14 @@
   }
 }
 
+.icon-search:before {
+  content: '\e90b';
+}
+
+.icon-close:before {
+  content: '\e90c';
+}
+
 .icon-play-button:before {
   content: '\e90a';
 }

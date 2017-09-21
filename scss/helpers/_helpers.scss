@@ -260,3 +260,8 @@
     @include pad(span(2 of $susy-desktop));
   }
 }
+
+%list-no-margin-left,
+.list-no-margin-left {
+  margin-left: 0;
+}

@@ -1,0 +1,33 @@
+<header class="header js-header">
+  <div class="header-top bg--primary-color text--white">
+    <div class="container">
+      <div class="header-top__content">
+        <div class="header-top__help">
+          {% include "_help-nav.twig" %}
+        </div>
+        <div class="header-top__search search-box js-search-box">
+          <div class="search-box__group js-search-box-group">
+            <span class="search-box__btn"></span>
+            <span class="search-box__text">Search</span>
+          </div>
+          <div class="search-box__inner">
+            {% include "_search.twig" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main js-nav-menu bg--white text--dark">
+    <span class="navigation-menu__btn"></span>
+    <div class="container">
+      <div class="header-main__left">
+      {% include "_branding.twig" %}
+      </div>
+      <div class="header-main__right">
+        <div class="navigation-menu">
+          {% include '_main-menu.twig' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
