@@ -24,7 +24,20 @@
 
   // Text white
   &--white {
-    color: $white;
+    &,
+    a {
+      color: $white;
+    }
+
+    a {
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
   }
 
   // Text dark

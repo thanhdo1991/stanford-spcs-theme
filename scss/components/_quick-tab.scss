@@ -1,0 +1,124 @@
+.quick-tab {
+  padding: rem(20px 0 17px);
+
+  @include susy-media(desktop) {
+    padding: rem(49px 0 23px);
+  }
+
+  &.text--white {
+    @extend .text--white;
+  }
+
+  &__title {
+    margin-bottom: rem(42px);
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(80px);
+    }
+  }
+
+  .chosen-container {
+    @include susy-media(desktop) {
+      @include invisible;
+    }
+  }
+
+  &__list {
+    .text--white & {
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__tabs {
+    @include susy-media(tablet) {
+      margin-bottom: rem(30px);
+    }
+
+    @include susy-media(mobileTabletOnly) {
+      @include invisible;
+    }
+
+    li {
+      @include susy-media(tablet) {
+        padding: rem(0 13px 0 20px);
+      }
+
+      &:before {
+        @include susy-media(tablet) {
+          top: rem(6px);
+        }
+      }
+
+      &.active {
+        a {
+          border-bottom: rem(3px) solid currentColor;
+          color: $text-color;
+
+          .text--white & {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    a {
+      border-bottom: rem(3px) solid transparent;
+      color: $link-color;
+      padding-bottom: rem(5px);
+
+      &:hover,
+      &:active {
+        border-bottom-color: currentColor;
+        color: $text-color;
+      }
+
+      .text--white & {
+        &:hover,
+        &:active {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__select {
+    @include susy-media(desktop) {
+      @include invisible;
+    }
+  }
+
+  &__select,
+  .chosen-container {
+    margin-bottom: rem(20px);
+  }
+
+  .chosen-single {
+    color: $text-color !important;
+
+    &:before {
+      bottom: rem(10px);
+      right: rem(14px);
+    }
+
+    span {
+      font-size: rem(18px);
+      height: rem(42px);
+      line-height: rem(23px);
+      padding: rem(9px 13px);
+    }
+  }
+
+  .chosen-drop {
+    padding-left: rem(30px);
+  }
+
+  &__sections {
+    @include susy-media(desktop) {
+      padding: rem(20px) span(2 of $susy-desktop);
+    }
+  }
+}

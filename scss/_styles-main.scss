@@ -13,8 +13,8 @@
 @import 'base/colors';
 
 //Helpers
-@import 'helpers/extends';
 @import 'helpers/functions';
+@import 'helpers/extends';
 @import 'helpers/mixins';
 
 // Reset
@@ -53,6 +53,7 @@
 @import 'components/image-feature';
 @import 'components/block-stats';
 @import 'components/text-columns';
+@import 'components/quick-tab';
 
 // Layouts
 @import 'layouts/layout';
