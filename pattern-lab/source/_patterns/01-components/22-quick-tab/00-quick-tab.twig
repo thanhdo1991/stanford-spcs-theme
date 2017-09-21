@@ -1,0 +1,41 @@
+<div class="quick-tab {{ quickTab.bgColor }}">
+  <div class="container">
+    <h1 class="quick-tab__title text--center">{{ quickTab.title }}</h1>
+    {% if quickTab.items|length > 0 %}
+      <div class="quick-tab__list">
+        <div class="form-item form-type-select">
+          <span class="select-arrow-icon">arrow icon</span>
+          <select class="quick-tab__select js-quick-tab__select">
+            {% for item in quickTab.items %}
+              <option value="{{ loop.index0 }}">{{ item.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <ul class="quick-tab__tabs list-border-inline text--center">
+          {% for item in quickTab.items %}
+            {% set isActive = "" %}
+            {% if loop.first %}
+              {% set isActive = "active" %}
+            {% endif %}
+            <li class="quick-tab__item js-quick-tab__item {{ isActive }}">
+              <a >{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="quick-tab__sections {{ quickTab.alignContent }}">
+        {% for item in quickTab.items %}
+          {% set isInvisible = "invisible" %}
+          {% if loop.first %}
+            {% set isInvisible = "" %}
+          {% endif %}
+
+          <div class="quick-tab__content js-quick-tab__content {{ isInvisible }}">
+            {{ item.content }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
