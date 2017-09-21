@@ -46,4 +46,10 @@
       color: $secondary-color;
     }
   }
+
+  &--small {
+    font-size: rem(13px);
+    padding: rem(11px 15px);
+    min-width: inherit;
+  }
 }

@@ -7,58 +7,120 @@
 
   li {
     margin: 0;
-  }
+    font-size: rem(18px);
 
-  a {
-    // @include source-sans-pro-semibold;
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+      margin-bottom: rem(-2px);
+    }
   }
 }
 
 .footer-panel {
   font-size: rem(15px);
   line-height: 1.6;
-  padding: rem(35px) 0 rem(30px);
+  padding: rem(31px 0 10px);
 
   @include susy-media(tablet) {
-    padding: rem(37px) 0 rem(10px);
+    padding: rem(28px) 0 rem(28px);
   }
 
   .logo-footer {
     line-height: 0;
-    margin-bottom: rem(15px);
-    max-width: rem(260px);
+    margin-bottom: rem(17px);
     padding-top: rem(3px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(20px);
+    }
   }
 
-  .social-links {
-    margin-bottom: rem(15px);
+  .logo {
+    @include susy-media(tabletOnly) {
+      width: rem(95px);
+    }
+  }
+
+  .site-name {
+    margin-left: rem(5px);
+
+    &:before {
+      background-color: $light-sandstone;
+    }
+
+    @include susy-media(tabletOnly) {
+      width: rem(120px);
+    }
+  }
+
+  .who-we-are {
+    font-size: 18px;
+    padding-right: rem(15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+
+    a {
+      font-size: rem(17px);
+      font-weight: 700;
+    }
   }
 
   &__title {
-    color: $gray-99;
-    border-color: $gray-99;
-    margin-bottom: rem(15px);
+    font-size: rem(18px);
+    margin-bottom: rem(17px);
+    text-transform: uppercase;
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+      margin-bottom: rem(11px);
+    }
   }
 
   &__body {
+    font-size: rem(18px);
     margin-bottom: rem(15px);
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+      margin-bottom: rem(17px);
+    }
   }
 
   .support-us {
-    margin-bottom: rem(15px);
+    font-size: rem(18px);
+
+    @include susy-media(tablet) {
+      font-size: rem(15px);
+    }
+
+    .btn {
+      background-color: $sun;
+      border-color: $sun;
+      color: $black;
+      min-width: rem(114px);
+      text-transform: uppercase;
+
+      @include susy-media(mobileOnly) {
+        float: right;
+        margin-bottom: rem(15px);
+        margin-top: rem(6px);
+      }
+    }
 
     @include susy-media(mobileOnly) {
       @include clearfix;
 
       p {
-        width: calc(100% - #{rem(118px)});
-        padding-right: rem(15px);
         float: left;
-      }
-
-      .btn {
-        float: right;
-        width: rem(118px);
+        margin-bottom: rem(15px);
+        padding-right: rem(35px);
+        width: calc(100% - #{rem(114px)});
       }
     }
   }
@@ -66,7 +128,13 @@
   &__top {
     &__item {
       @include susy-media(mobileOnly) {
-        margin-bottom: rem(25px);
+        margin-bottom: rem(32px);
+
+        &:nth-child(1) {
+          .footer-panel__title {
+            margin-bottom: rem(10px);
+          }
+        }
 
         &:nth-child(4),
         &:nth-child(1) {
@@ -76,12 +144,18 @@
         &:nth-child(2),
         &:nth-child(3) {
           float: left;
+          margin-bottom: rem(10px);
           margin-right: rem(30px);
           width: calc((100% - #{rem(30px)})/2);
         }
 
-        &:nth-child(3) {
+        &:nth-child(2) {
+          float: right;
           margin-right: 0;
+        }
+
+        &:nth-child(4) {
+          margin-bottom: 0;
         }
       }
 
@@ -89,43 +163,49 @@
         float: left;
         margin-right: rem(20px);
 
+        &:nth-child(1) {
+          .footer-panel__title {
+            margin-bottom: rem(9px);
+          }
+        }
+
         &:nth-child(4n + 1) {
-          width: calc((100% - #{3 * rem(20px)})*4/12);
+          width: calc((100% - #{3 * rem(20px)})*4.4/12);
         }
 
         &:nth-child(4n + 2) {
-          width: calc((100% - #{3 * rem(20px)})*2/12);
+          width: calc((100% - #{3 * rem(20px)})*2.7/12);
         }
 
         &:nth-child(4n + 3) {
-          width: calc((100% - #{3 * rem(20px)})*3/12);
+          width: calc((100% - #{3 * rem(20px)})*2.1/12);
         }
 
         &:nth-child(4n) {
-          width: calc((100% - #{3 * rem(20px)})*3/12);
           margin-right: 0;
+          width: calc((100% - #{3 * rem(20px)})*2/12);
         }
       }
 
       @include susy-media(desktop) {
         float: left;
-        margin-right: rem(50px);
+        margin-right: rem(30px);
 
         &:nth-child(4n + 1) {
-          width: calc((100% - #{3 * rem(50px)})*4/12);
+          width: calc((100% - #{rem(30px)})*3.5/12);
         }
 
         &:nth-child(4n + 2) {
-          width: calc((100% - #{3 * rem(50px)})*2.5/12);
+          width: calc((100% - #{rem(30px)})*2.95/12);
         }
 
         &:nth-child(4n + 3) {
-          width: calc((100% - #{3 * rem(50px)})*2.5/12);
+          width: calc((100% - #{rem(30px)})*1.95/12);
         }
 
         &:nth-child(4n) {
-          width: calc((100% - #{3 * rem(50px)})*3/12);
           margin-right: 0;
+          width: calc((100% - #{rem(30px)})*2.82/12);
         }
       }
     }
@@ -134,10 +214,10 @@
 
 .footer-global {
   font-size: rem(14px);
-  padding: rem(20px 0);
+  padding: rem(25px 0);
 
   @include susy-media(tablet) {
-    padding: rem(20px 0 25px);
+    padding: rem(17px 0 19px);
   }
 
   &__logo {
@@ -147,7 +227,7 @@
     @include susy-media(mobileOnly) {
       padding: 0;
       text-align: left;
-      width: calc(100% - #{rem(118px)});
+      width: calc(100% - #{rem(144px)});
     }
 
     img {
@@ -163,20 +243,28 @@
   &__nav,
   &__copyright {
     @include susy-media(tablet) {
+      line-height: 1.45;
       margin-left: rem(160px);
     }
   }
 
   &__nav {
+    font-size: rem(18px);
     margin-bottom: rem(3px);
     padding-top: rem(7px);
+
+    @include susy-media(tablet) {
+      font-size: rem(14px);
+      margin-bottom: 0;
+      padding-top: rem(5px);
+    }
 
     @include susy-media(mobileOnly) {
       float: right;
       margin: 0;
       padding: 0;
       text-align: left;
-      width: rem(118px);
+      width: rem(144px);
     }
 
     ul {
@@ -188,7 +276,7 @@
 
       @include susy-media(tablet) {
         display: inline;
-        margin: 0 rem(20px) 0 0;
+        margin: 0 rem(26px) 0 0;
       }
 
       &:last-of-type {
@@ -203,9 +291,9 @@
 
   &__copyright {
     @include susy-media(mobileOnly) {
-      width: calc(100% - #{rem(118px)});
       float: left;
-      padding: rem(10px 15px 0 0)
+      padding: rem(10px 35px 0 0);
+      width: calc(100% - #{rem(144px)});
     }
 
     p {

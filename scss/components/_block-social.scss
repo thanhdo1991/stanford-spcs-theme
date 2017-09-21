@@ -1,0 +1,56 @@
+%social-links,
+.social-links {
+  ul {
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    line-height: 0;
+    margin-bottom: rem(5px);
+    padding: 0 rem(2.5px);
+  }
+
+  a {
+    border-radius: 100%;
+    color: $white;
+    font-size: rem(18px);
+    height: rem(35px);
+    line-height: 1;
+    overflow: hidden;
+    padding: rem(8px 0);
+    text-align: center;
+    text-indent: -999em;
+    transition: all 0.3s ease-in-out;
+    width: rem(35px);
+    display: inline-block;
+
+    &:before {
+      display: block;
+      float: left;
+      height: rem(35px);
+      text-indent: 0;
+      width: rem(35px);
+    }
+
+    &.icon-envelope,
+    &.icon-twitter {
+      background-color: $primary-color;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &.icon-bg-white {
+    ul {
+      li {
+        a {
+          background-color: $white;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

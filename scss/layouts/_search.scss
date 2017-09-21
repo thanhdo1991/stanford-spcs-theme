@@ -1,6 +1,4 @@
 // Search.
-$widthInputSearch: 250px;
-
 .search-box {
   &__inner {
     form {
@@ -23,25 +21,25 @@ $widthInputSearch: 250px;
       @extend .icon-search;
       color: $gray;
       cursor: pointer;
+      height: rem(21px);
+      line-height: rem(20px);
       position: absolute;
+      right: rem(5px);
       top: 50%;
       transform: translateY(-50%);
       width: rem(20px);
-      height: rem(21px);
-      line-height: rem(20px);
-      right: 5px;
 
       .form-submit {
         cursor: pointer;
-        height: 26px;
-        opacity: 0;
-        position: absolute;
-        right: -4px;
-        top: -3px;
-        width: 30px;
-        z-index: 1;
+        height: rem(26px);
         min-width: inherit;
+        opacity: 0;
         padding: 0;
+        position: absolute;
+        right: rem(-4px);
+        top: rem(-3px);
+        width: rem(30px);
+        z-index: 1;
       }
     }
 
@@ -55,16 +53,16 @@ $widthInputSearch: 250px;
     @extend %icons;
     @extend .icon-search;
     color: $white;
-    margin-right: 8px;
+    margin-right: rem(8px);
 
     &:before {
-      font-size: 15px;
+      font-size: rem(15px);
     }
   }
 
   &__text {
-    font-size: rem(16px);
     color: $white;
+    font-size: rem(16px);
   }
 
   &__group {
