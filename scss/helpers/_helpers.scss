@@ -24,25 +24,28 @@
 
   // Text white
   &--white {
-    &,
-    a {
-      color: $white;
-    }
+    color: $white;
 
     a {
-      &:hover,
-      &:active,
-      &:focus,
-      &.active {
-        color: $white;
-        text-decoration: underline;
-      }
+      @extend %link--white;
     }
   }
 
   // Text dark
   &--dark {
     color: $text-color;
+
+    a {
+      .text--white & {
+        @extend %link;
+      }
+    }
+
+    .btn {
+      .text--white & {
+        @extend %btn;
+      }
+    }
   }
 
   // Other color
@@ -131,6 +134,10 @@
 
   a {
     @extend %link--dark;
+
+    .text--dark & {
+      @extend %link--dark;
+    }
   }
 }
 
