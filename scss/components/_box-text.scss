@@ -1,0 +1,32 @@
+.box-text {
+  @include susy-media(tablet) {
+    margin-bottom: rem(14px);
+  }
+
+  &__title {
+    margin-bottom: rem(8px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__date {
+    font-size: rem(23px);
+    padding-top: rem(2px);
+
+    @include susy-media(tablet) {
+      font-weight: 700;
+      padding-top: 0;
+    }
+  }
+
+  &__description {
+    line-height: rem(23px);
+
+    @include susy-media(tablet) {
+      font-size: rem(16px);
+      line-height: rem(20px);
+    }
+  }
+}

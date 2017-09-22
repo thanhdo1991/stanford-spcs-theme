@@ -1,0 +1,46 @@
+{
+  "boxMenu": {
+    "title": "Related courses:",
+    "utilityLinks": [
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Nam dapibus nisl vitae elit fringilla rutrum"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Aenean solli"
+            },
+            "only": true
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-elements-link",
+          "with": {
+            "link": {
+              "class": "",
+              "href": "#",
+              "text": "Pellentesque non dignissim"
+            },
+            "only": true
+          }
+        }
+      }
+    ]
+  }
+}

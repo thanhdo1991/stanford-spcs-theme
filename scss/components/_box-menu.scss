@@ -1,0 +1,21 @@
+.box-menu {
+  &__title {
+    margin-bottom: rem(7px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(8px);
+    }
+  }
+
+  &__list {
+    li {
+      margin-bottom: rem(11px);
+
+      @include susy-media(tablet) {
+        font-size: rem(16px);
+        line-height: rem(20px);
+        margin-bottom: rem(14px);
+      }
+    }
+  }
+}

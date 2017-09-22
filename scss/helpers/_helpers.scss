@@ -271,6 +271,12 @@
   }
 }
 
+.hidden-on-mobileOnly {
+  @include susy-media(mobileOnly) {
+    display: none !important;
+  }
+}
+
 .padding-two-sides {
   @include susy-media(tablet) {
     @include pad(span(1 of $susy-tablet));

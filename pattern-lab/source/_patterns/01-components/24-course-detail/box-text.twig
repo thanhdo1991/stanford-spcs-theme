@@ -1,0 +1,9 @@
+<div class="box-text">
+  <h6 class="box-text__title text--primary-color">{{ boxText.title }}</h6>
+  {% if boxText.date %}
+    <div class="box-text__date">{{ boxText.date }}</div>
+  {% endif %}
+  {% if boxText.description %}
+    <div class="box-text__description">{{ boxText.description }}</div>
+  {% endif %}
+</div>

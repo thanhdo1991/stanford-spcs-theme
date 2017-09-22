@@ -1,0 +1,162 @@
+{
+  "courseDetail": {
+    "contentLeft": {
+      "include()": {
+        "pattern": "components-content-left",
+        "with": {
+          "contentLeft": {
+            "link" : {
+              "include()": {
+                "pattern": "base-elements-link",
+                "with": {
+                  "link": {
+                    "class": "link link--arrow-left",
+                    "href": "#",
+                    "text": "Back to search results"
+                  },
+                  "only": true
+                }
+              }
+            },
+            "title": "Creative Writing 8-9",
+            "category": "Writing &amp; Humanities",
+            "body": "<p>In this course, students develop the imaginative, critical, and technical skills necessary for writing fiction and poetry. Using the published work of well-known authors as well as original student writing, students explore various topics and problems that face anyone embarking on the creative-writing process. Students read texts as writers, not as critics or historians of literature.</p><p>Additionally, this class will examine the fundamental questions facing writers today: how and why do writers write? The course follows the workshop model where students bring their own stories and poems to class for group discussion, and students develop the skills to constructively critique and workshop each other&#39;s work.</p><p>Through this process, students learn a variety of techniques for improving and developing their own writing. Handouts, in-class exercises, peer review, and individual conferences help students define and set goals for strengthening their writing. Each student will compile a portfolio of writing; some classes may also opt to create a compendium of student writings.</p><p>Students may be given a variety of assignments, ranging from short, one-time writings to longer, more substantive pieces subject to multiple drafts and review. The course is taught by a range of instructors, including published authors, current or former recipients of Stanford&#39;s Wallace Stegner Fellowship for emerging writers, or other affiliated writing professionals.</p>",
+            "buttonLink" : {
+              "include()": {
+                "pattern": "base-elements-link",
+                "with": {
+                  "link": {
+                    "class": "btn",
+                    "href": "#",
+                    "text": "Find out more about how to apply to Summer Institutes"
+                  },
+                  "only": true
+                }
+              }
+            }
+          },
+          "only": true
+        }
+      }
+    },
+    "contentRight": {
+      "include()": {
+        "pattern": "components-content-right",
+        "with": {
+          "contentRight": [
+            {
+              "include()": {
+                "pattern": "components-box-text",
+                "with": {
+                  "boxText": {
+                    "title": "Session one",
+                    "date": "June 25 - July 14, 2018",
+                    "description": ""
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-box-date",
+                "with": {
+                  "boxDate": {
+                    "title": "Grade(s)",
+                    "day": "8-9",
+                    "description": "at the time of application"
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-box-date",
+                "with": {
+                  "boxDate": {
+                    "title": "Age(s)",
+                    "day": "13-15",
+                    "description": "on the first day of session"
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-box-text",
+                "with": {
+                  "boxText": {
+                    "title": "Prerequisite(s)",
+                    "date": "",
+                    "description": "Nam dapibus nisl vitae elit fringilla rutrum. Aenean solli non dignissim."
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-box-menu"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-box-menu",
+                "with": {
+                  "boxMenu": {
+                    "title": "Related Programs:",
+                    "utilityLinks": [
+                      {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "class": "",
+                              "href": "#",
+                              "text": "Nam dapibus nisl vitae elit fringilla rutrum"
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "class": "",
+                              "href": "#",
+                              "text": "Aenean solli"
+                            },
+                            "only": true
+                          }
+                        }
+                      },
+                      {
+                        "include()": {
+                          "pattern": "base-elements-link",
+                          "with": {
+                            "link": {
+                              "class": "",
+                              "href": "#",
+                              "text": "Pellentesque non dignissim"
+                            },
+                            "only": true
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "only": true
+                }
+              }
+            }
+          ],
+          "only": true
+        }
+      }
+    }
+  }
+}

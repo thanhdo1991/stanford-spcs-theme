@@ -136,6 +136,19 @@ ol {
       color: darken($white, 10%);
     }
   }
+
+  &--arrow-left {
+    padding-left: rem(17px);
+    position: relative;
+
+    &:before {
+      content: '\2190';
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
 }
 
 a {

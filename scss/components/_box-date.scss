@@ -1,0 +1,40 @@
+.box-date {
+  @include susy-media(tablet) {
+    margin-bottom: rem(14px);
+  }
+
+  &__title {
+    margin-bottom: rem(4px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__day {
+    display: inline-block;
+    font-size: rem(35px);
+    line-height: rem(44px);
+    vertical-align: middle;
+
+    @include susy-media(tablet) {
+      display: block;
+      font-size: rem(23px);
+      font-weight: 700;
+      line-height: rem(24px);
+    }
+  }
+
+  &__description {
+    display: inline-block;
+    font-size: rem(16px);
+    line-height: rem(20px);
+    padding-left: rem(7px);
+    vertical-align: middle;
+
+    @include susy-media(tablet) {
+      display: block;
+      padding-left: 0;
+    }
+  }
+}

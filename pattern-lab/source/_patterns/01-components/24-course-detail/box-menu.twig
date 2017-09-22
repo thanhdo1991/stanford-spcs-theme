@@ -1,0 +1,10 @@
+<div class="box-menu">
+  <h6 class="box-menu__title text--primary-color">{{ boxMenu.title }}</h6>
+  <div class="box-menu__list">
+    <ul>
+      {% for item in boxMenu.utilityLinks %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
