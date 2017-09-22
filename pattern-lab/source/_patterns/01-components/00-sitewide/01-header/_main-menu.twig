@@ -1,0 +1,20 @@
+<div class="main-menu js-expanded-menu">
+  <ul class="menu nav">
+    {% for itemLv1 in mainMenu %}
+      {% if itemLv1.childMenuBlock %}
+        <li class="expanded-menu">
+          <span class="expanded-menu__link">
+            <span class="no-link">{{ itemLv1.link.text }}</span>
+            <span class="expanded-menu__btn">
+              <i class="expanded-menu__icon"></i>
+            </span>
+          </span>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ itemLv1.link.href }}" class="{{ itemLv1.link.class }}">{{ itemLv1.link.text }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -1,6 +1,93 @@
 // Navigation.
-.nav {
-  ul {
-    margin-bottom: rem(10px);
+
+.expanded-menu {
+  &__btn {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: rem(-20px);
+    top: 0;
+    width: auto;
+    z-index: 2;
+    left: 0;
+  }
+
+  &__icon {
+    @extend %icons;
+    @extend .icon-triangle-down;
+    margin-top: rem(-1px);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $primary-color;
+
+    &:before {
+      font-size: rem(14px);
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+
+    > a {
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
+
+%main-menu,
+.main-menu {
+  li {
+    display: block;
+    font-weight: 400;
+    position: relative;
+    float: left;
+    font-size: 18px;
+
+    .no-link,
+    a {
+      display: block;
+      position: relative;
+
+      &:before {
+        font-size: rem(14px);
+        margin-right: rem(10px);
+      }
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    &.expanded-menu:hover {
+      .no-link,
+      .expanded-menu__icon {
+        color: $link-color-darker;
+      }
+    }
+
+    span,
+    a {
+      cursor: pointer;
+      color: $text-color;
+    }
+  }
+
+  > ul {
+    > li {
+      margin: 0 0 0 26px;
+
+      .no-link,
+      a {
+        padding: rem(18px 0 17px);
+      }
+    }
+
+    > .expanded-menu {
+      padding-right: rem(20px);
+    }
   }
 }
