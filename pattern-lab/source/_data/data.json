@@ -73,5 +73,48 @@
   },
   "seconds": "31",
   "tablet": "(min-width: 768px)",
-  "desktop": "(min-width: 1024px)"
+  "desktop": "(min-width: 1024px)",
+  "mainMenu": [
+    {
+      "link": {
+        "href": "#",
+        "text": "About",
+        "class": ""
+      }
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Courses"
+      },
+      "childMenuBlock": true
+    },
+    {
+      "link": {
+        "href": "",
+        "text": "Student Life"
+      },
+      "childMenuBlock": true
+    },
+    {
+      "link": {
+        "href": "",
+        "text": "FAQ"
+      },
+      "childMenuBlock": true
+    },
+    {
+      "link": {
+        "href": "#",
+        "text": "Tuition &amp; Dates"
+      }
+    },
+    {
+      "link": {
+        "href": "",
+        "text": "Admission"
+      }
+    }
+  ],
+  "siteName": "Pre-Collegiate Summer Institutes"
 }

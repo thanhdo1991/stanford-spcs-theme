@@ -54,10 +54,14 @@
 @import 'components/block-stats';
 @import 'components/text-columns';
 @import 'components/quick-tab';
+@import 'components/block-social';
 
 // Layouts
 @import 'layouts/layout';
 @import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/search';
+@import 'layouts/footer';
 
 // Pages
 // @import 'pages/index';
