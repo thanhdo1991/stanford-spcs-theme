@@ -1,0 +1,107 @@
+.header {
+  &-top {
+    &__content {
+      align-content: stretch;
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      float: right;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    &__help {
+      float: left;
+
+      li {
+        display: inline-block;
+        font-size: rem(16px);
+      }
+
+      a {
+        color: $white;
+        display: block;
+        line-height: 1.5;
+        padding: rem(7px 12px 9px);
+
+        &:hover {
+          color: darken($white, 20%);
+        }
+      }
+    }
+
+    &__search {
+      float: right;
+      margin-left: rem(20px);
+      position: relative;
+    }
+  }
+
+  .search-box {
+    &__inner {
+      margin-top: rem(7px);
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      width: rem(250px);
+      z-index: -1;
+    }
+  }
+
+  &-main {
+    box-shadow: rem(0 0 10px) 0 rgba(0, 0, 0, .15), rem(0 3px 3px 0) rgba(0, 0, 0, .15);
+    padding: rem(27px 0 7px);
+
+    &__left {
+      float: left;
+      padding-top: rem(1px);
+    }
+
+    &__right {
+      float: right;
+    }
+  }
+}
+
+.show-search-box {
+  .search-box__inner {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.branding {
+  .logo {
+    display: inline-block;
+    line-height: 0;
+    margin-bottom: rem(3px);
+    vertical-align: bottom;
+    width: rem(110px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .site-name {
+    display: inline-block;
+    font-size: rem(18px);
+    line-height: rem(19px);
+    margin-left: rem(3px);
+    padding-left: rem(10px);
+    position: relative;
+    vertical-align: middle;
+    width: rem(150px);
+
+    &:before {
+      background-color: $gray;
+      bottom: rem(3px);
+      content: '';
+      left: 0;
+      position: absolute;
+      top: rem(5px);
+      width: rem(1px);
+    }
+  }
+}
